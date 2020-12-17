@@ -1,0 +1,11 @@
+env:
+  es6: true
+  browser: true
+  commonjs: true
+  jest: true
+
+extends: ['htmlacademy/es6', 'eslint:recommended']
+
+parserOptions:
+  ecmaVersion: 2017
+  sourceType: module
