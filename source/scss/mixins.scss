@@ -1,0 +1,25 @@
+@mixin set-font($size: 14px, $line-height: 21px, $font-weight: 400) {
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+@mixin ul-style-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin button-normalize {
+  padding: 0;
+  border: 0 none;
+  background-color: transparent;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+@mixin vertical-margin-clear {
+  margin-top: 0;
+  margin-bottom: 0;
+}

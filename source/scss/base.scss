@@ -1,0 +1,24 @@
+.d-none {
+  display: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.base-title {
+  @include set-font(50px, 60px, 500);
+}
+
+.base-text {
+  @include set-font(14px, 21px, 400);
+}
