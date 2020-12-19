@@ -1,5 +1,6 @@
 .category__button {
   @include button-normalize;
+  @include set-transition(all);
   order: -1;
   margin-top: 20px;
   padding-bottom: 15px;
@@ -15,6 +16,7 @@
   }
 
   &::before {
+    @include set-transition(all);
     position: absolute;
     content: '';
     z-index: 0;

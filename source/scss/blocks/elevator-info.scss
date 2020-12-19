@@ -32,14 +32,11 @@
 .elevator-info__feature-item {
   width: 39%;
   margin-bottom: 50px;
+  position: relative;
 
   &:nth-child(odd) {
     text-align: right;
-
-    .elevator-info__feature-title,
-    .elevator-info__feature-text {
-      padding-right: 47px;
-    }
+    padding-right: 47px;
 
     & .elevator-info__button {
       right: 0;
@@ -48,15 +45,19 @@
 
   &:nth-child(even) {
     text-align: left;
-
-    .elevator-info__feature-title,
-    .elevator-info__feature-text {
-      padding-left: 47px;
-    }
+    padding-left: 47px;
 
     & .elevator-info__button {
       left: 0;
     }
+  }
+
+  &--active .elevator-info__feature-title {
+    color: rgba($c-black, 1);
+  }
+
+  &--active .elevator-info__feature-text {
+    color: rgba($c-lightest-grey, 1);
   }
 }
 
@@ -69,11 +70,13 @@
 
 .elevator-info__feature-title {
   @include set-font(16px, 24px, 500);
-  position: relative;
+  @include set-transition(color);
+  color: rgba($c-black, 0.08);
 }
 
 .elevator-info__feature-text {
-  color: $c-lightest-grey;
+  @include set-transition(opacity);
+  color: rgba($c-lightest-grey, 0.25);
   margin-top: 15px;
 }
 
@@ -82,8 +85,7 @@
   width: 32px;
   height: 32px;
   position: absolute;
-  bottom: 50%;
-  transform: translateY(50%);
+  top: 5px;
   background-image: url('../img/circle.svg');
   background-position: center;
   background-repeat: no-repeat;
