@@ -1,0 +1,53 @@
+.button {
+  @include button-normalize;
+  @include set-transition(box-shadow);
+  padding: 15px 55px;
+  display: inline-flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #4582DD 0%, #1F2A66 100%), #C4C4C4;
+  border-radius: 100px;
+  position: relative;
+  box-shadow: 0 3px 0 #182359, 0 29px 25px -18px rgba(68, 128, 219, 0.3);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 3px 0 #182359, 0 29px 25px -18px rgba(68, 128, 219, 0.5);
+  }
+
+  &:active {
+    box-shadow: 0 3px 0 #182359, 0 29px 25px -18px rgba(68, 128, 219, 0.6);
+  }
+}
+
+.button--elevator-img {
+  padding-left: 50px;
+  padding-right: 35px;
+  margin-left: 10px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    left: -15px;
+    width: 62px;
+    height: 96px;
+    background-image: url('../img/elevator-btn.png');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.button__title {
+  @include set-font(16px, 20px, 500);
+  white-space: nowrap;
+  color: $c-white;
+}
+
+.button__description {
+  @include set-font(14px, 20px, 400);
+  white-space: nowrap;
+  font-style: italic;
+  color: $c-blue;
+}

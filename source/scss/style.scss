@@ -2,5 +2,20 @@
 @import "mixins.scss";
 @import "fonts.scss";
 @import "../../node_modules/normalize.css/normalize";
+@import "../../node_modules/owl.carousel/dist/assets/owl.carousel";
+@import "../../node_modules/owl.carousel/dist/assets/owl.theme.default";
 @import "common.scss";
 @import "base.scss";
+
+@import "blocks/header";
+@import "blocks/burger-btn";
+@import "blocks/welcome";
+@import "blocks/elevator";
+@import "blocks/cta";
+@import "blocks/button";
+@import "blocks/quote";
+@import "blocks/categories";
+@import "blocks/category";
+@import "blocks/model";
+@import "blocks/slider";
+@import "blocks/elevator-info";

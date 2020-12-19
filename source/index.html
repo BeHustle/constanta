@@ -7,46 +7,68 @@
   <title>Constanta</title>
 </head>
 <body>
-<section class="welcome">
-  <header class="welcome__header header container">
-    <button type="button" class="header__burger-btn"></button>
-    <div class="header__logo"><img width="162" height="42" src="./img/logo-header.png" alt="Constanta"></div>
-    <div class="header__contacts">
-      <a href="tel:84952018015" class="header__tel">8 495 201 80 15</a>
-      <button type="button" class="header__callback-btn">Заказать обратный звонок</button>
-    </div>
-  </header>
-  <div class="welcome__elevator elevator">
-    <div class="elevator__container"><img width="322" height="1087" src="./img/elevator-big.png" alt="Вакуумный лифт"></div>
-    <button type="button" data-info="1" class="elevator__plus-btn"></button>
-    <button type="button" data-info="2" class="elevator__plus-btn"></button>
-    <button type="button" data-info="3" class="elevator__plus-btn"></button>
-  </div>
-  <div class="welcome__promo cta container">
-    <h1 class="cta__title">Производство, продажа и монтаж электрических и вакуумных лифтов</h1>
-    <p class="cta__subtitle">Доставка и монтаж по всему миру</p>
-    <button class="cta__btn button button--elevator-img" type="button">
-      <span class="button__title">Рассчитать стоимость</span>
-      <span class="button__description">в течении 10 минут</span>
-    </button>
-  </div>
-  <blockquote class="welcome__quote quote container">
-    <p class="quote__text base-text">
-      Чтобы добиться самого эстетичного вида лифта и 93% площади остекления мы практически изобрели лифты заново
-    </p>
-    <div class="quote__author-block">
-      <div class="quote__img">
-        <img width="50" height="60" src="./img/manager-header.png" alt="Павел Иванов - Генеральный директор Constanta">
+<section class="welcome base-section">
+  <div class="container welcome__container">
+    <header class="welcome__header header">
+      <button type="button" class="header__burger burger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="header__logo"><img width="162" height="42" src="./img/logo-header.png" alt="Constanta"></div>
+      <div class="header__contacts">
+        <a href="tel:84952018015" class="header__tel">8 495 201 80 15</a>
+        <button type="button" class="header__callback-btn">Заказать обратный звонок</button>
       </div>
-      <div class="quote__wrapper">
-        <cite class="quote__author-name">Павел Иванов</cite>
-        <cite class="quote__author-position base-text">Генеральный директор</cite>
-        <span class="quote__sign" style="background-image: url('#')"></span>
-      </div>
+    </header>
+    <div class="welcome__elevator elevator">
+      <div class="welcome__elevator-container elevator__container"><img width="322" height="1087" src="./img/elevator-big.png" alt="Вакуумный лифт"></div>
+      <button type="button" data-info="1" class="welcome__elevator-btn elevator__plus-btn">
+        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 6.48H4.32V10.8H6.36V6.48H10.68V4.32H6.36V0H4.32V4.32H0V6.48Z" fill="white"/>
+        </svg>
+      </button>
+      <button type="button" data-info="2" class="welcome__elevator-btn elevator__plus-btn">
+        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 6.48H4.32V10.8H6.36V6.48H10.68V4.32H6.36V0H4.32V4.32H0V6.48Z" fill="white"/>
+        </svg>
+      </button>
+      <button type="button" data-info="3" class="welcome__elevator-btn elevator__plus-btn">
+        <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 6.48H4.32V10.8H6.36V6.48H10.68V4.32H6.36V0H4.32V4.32H0V6.48Z" fill="white"/>
+        </svg>
+      </button>
     </div>
-  </blockquote>
+    <div class="welcome__promo cta">
+      <h1 class="cta__title">Производство, продажа и монтаж электрических и вакуумных лифтов</h1>
+      <p class="cta__subtitle">Доставка и монтаж по всему миру</p>
+      <button class="cta__btn button button--elevator-img" type="button">
+        <span class="button__title">Рассчитать стоимость</span>
+        <span class="button__description">в течении 10 минут</span>
+      </button>
+    </div>
+    <blockquote class="welcome__quote quote">
+      <p class="quote__text base-text">
+        Чтобы добиться самого эстетичного вида лифта и 93% площади остекления мы практически изобрели лифты заново
+      </p>
+      <div class="quote__author-block">
+        <div class="quote__img">
+          <img width="50" height="66" src="./img/manager-header.png" alt="Павел Иванов - Генеральный директор Constanta">
+        </div>
+        <div class="quote__wrapper">
+          <cite class="quote__author-name">Павел Иванов</cite>
+          <cite class="quote__author-position base-text">Генеральный директор</cite>
+          <span class="quote__author-sign">
+            <img src="./img/sign.png" width="83" height="41" alt="Подпись генерального директора">
+          </span>
+        </div>
+      </div>
+    </blockquote>
+  </div>
+  <div class="welcome__bottom-bg"></div>
 </section>
-<section class="categories">
+<section class="categories base-section">
   <div class="container">
     <h2 class="categories__title base-title">Категории лифтов</h2>
     <div class="categories__buttons">
@@ -55,14 +77,14 @@
     </div>
     <div class="categories__container">
       <ul class="categories__list">
-        <li class="categories__item category category--active">
+        <li data-category="vacuum" class="categories__item category category--active">
           <h3 class="category__title">Вакуумные</h3>
           <button type="button" data-category="vacuum" class="category__button">
             <img src="./img/vacuum.png" width="99" height="260" alt="Вакуумный лифт">
           </button>
           <ul class="category__inner-list">
             <li class="category__product">
-              <button type="button" data-category="model-d800" class="category__product-btn category__product-btn--active">Модель D800</button>
+              <button type="button" data-category="model-d800" class="category__product-btn">Модель D800</button>
             </li>
             <li class="category__product">
               <button type="button" data-category="model-el-d1000" class="category__product-btn">Модель EL D1000</button>
@@ -72,7 +94,7 @@
             </li>
           </ul>
         </li>
-        <li class="categories__item category">
+        <li data-category="electric" class="categories__item category">
           <h3 class="category__title">Электрические</h3>
           <button type="button" data-category="electric" class="category__button">
             <img src="./img/electric.png" width="137" height="260" alt="Электрический лифт">
@@ -100,7 +122,7 @@
             <span class="button__description">в течении 10 минут</span>
           </button>
         </div>
-        <div class="model" data-inner="electric">
+        <div class="model d-none" data-inner="electric">
           <div class="model__title">Электрические</div>
           <p class="base-text">По сравнению с вакуумными, электрические имеют более плавный ход и возможность установить не только распашные, но и автоматические двери, которые позволяют дополнительно экономить пространство.</p>
           <p class="base-text"> У прямоугольных электрических лифтов на одном этаже видны только 4 стойки и один пояс. Толщина стоек всего 9 см. Это обеспечивает панорамность до 90%</p>
@@ -109,7 +131,7 @@
             <span class="button__description">в течении 10 минут</span>
           </button>
         </div>
-        <div class="model" data-inner="current-collection">
+        <div class="model d-none" data-inner="current-collection">
           <div class="model__title">Готовый модельный ряд</div>
           <p class="base-text">В нашей коллекции насчитывается более сотни лифтов. Каждый лифт прошел все необходимые тесты и опробован десятками заказчиков. В кратчайшие срок мы готовы собрать и установить вам любую из наших моделей</p>
           <button class="model__button button" type="button">
@@ -117,7 +139,7 @@
             <span class="button__description">в течении 10 минут</span>
           </button>
         </div>
-        <div class="model" data-inner="new-order">
+        <div class="model d-none" data-inner="new-order">
           <div class="model__title">Под заказ</div>
           <p class="base-text">Хотите получить лифт в уникальном дизайне или не нашли подходящего варианта в нашем каталоге? Не проблема! Мы с радостью воплотим в жизнь любой дизайн и конструкцию. Наши специалисты обладают огромным опытом и выполнят любой проект максимально быстро и качественно, вне зависимости от сложности</p>
           <button class="model__button button" type="button">
@@ -125,7 +147,7 @@
             <span class="button__description">в течении 10 минут</span>
           </button>
         </div>
-        <div class="model" data-inner="model-el-d1000">
+        <div class="model d-none" data-inner="model-el-d1000">
           <div class="model__title">Модель EL-D1000</div>
           <p class="base-text"> - Самая ходовая модель с комфортом поднимает 2х пассажиров.</p>
           <p class="base-text"> - Широкий спектр отделочных материалов и дополнительных опция позволяет добиться неповторимого дизайна</p>
@@ -135,7 +157,7 @@
             <span class="button__description">в течении 10 минут</span>
           </button>
         </div>
-        <div class="model" data-inner="model-d800">
+        <div class="model d-none" data-inner="model-d800">
           <div class="model__title">Модель D800</div>
           <p class="base-text">Ключевые характеристики модели: </p>
           <p class="base-text"> - Установка без приямка </p>
@@ -147,7 +169,7 @@
             <span class="button__description">в течении 10 минут</span>
           </button>
         </div>
-        <div class="model" data-inner="model-d1000">
+        <div class="model d-none" data-inner="model-d1000">
           <div class="model__title">Модель D1000</div>
           <p class="base-text"> - Данная модель идеально подходит для перемещения 1-го человека.</p>
           <p class="base-text"> - Габариты позволяют вписать даже в небольшое отверстие в перекрытии.</p>
@@ -161,52 +183,63 @@
     </div>
   </div>
 </section>
-<section class="slider">
+<section class="slider base-section">
   <div class="container">
-    <h2 class="slider__title base-title">Добавьте “wow” эффект своему интерьеру</h2>
-    <div class="slider__images">
-      <!-- слайдер здесь -->
+    <h2 class="slider__title base-title">Добавьте “wow” эффект своему&nbsp;интерьеру</h2>
+    <div class="slider__images owl-carousel owl-theme">
+      <div><img alt="" src="./img/slider-img-1.jpg"></div>
+      <div><img alt="" src="./img/slider-img-2.jpg"></div>
     </div>
   </div>
 </section>
-<section class="elevator-info">
+<section class="elevator-info base-section">
   <div class="container">
     <div class="elevator-info__logo">
       <img src="./img/logo-grey.png" alt="Constanta" width="112" height="29">
-      <h2 class="elevator-info__title">Легкий, компактный, без строительной бетонной шахты, машинного отделения и приямка</h2>
-      <ul class="elevator-info__features">
-        <li class="elevator-info__feature-item">
-          <div class="elevator-info__feature-title">Не надо строить специальную шахту с помещением для подъемного механизма</div>
-          <div class="elevator-info__feature-text base-text">Все устройство представляет собой высокую прозрачную трубку с вакуумным насосом размером 0,6х0,7х1м который можно разместить в любом подсобном помещении дома на расстоянии до 25 м от самого лифта</div>
-          <div class="elevator-info__line" data-item="shaft"></div>
-          <button class="elevator-info__button" type="button" data-item="shaft"></button>
-        </li>
-        <li class="elevator-info__feature-item">
-          <div class="elevator-info__feature-title">Алюминеевый каркас</div>
-          <div class="elevator-info__feature-text base-text">Алюминиевый каркас, в сочетании с ударопрочным поликарбонатом, дают незначительную нагрузку на плиту перекрытия и не требуют усиления конструкции</div>
-          <div class="elevator-info__line" data-item="carcass"></div>
-          <button class="elevator-info__button" type="button" data-item="carcass"></button>
-        </li>
-        <li class="elevator-info__feature-item">
-          <div class="elevator-info__feature-title">Конструкция шахты опирается на чистовое покрытие пола</div>
-          <div class="elevator-info__feature-text base-text">Все устройство представляет собой высокую прозрачную трубку с вакуумным насосом размером 0,6х0,7х1м который можно разместить в любом подсобном помещении дома на расстоянии до 25 м от самого лифта</div>
-          <div class="elevator-info__line" data-item="floor"></div>
-          <button class="elevator-info__button" type="button" data-item="floor"></button>
-        </li>
-        <li class="elevator-info__feature-item">
-          <div class="elevator-info__feature-title">Вакуумный лифт весьма компактен</div>
-          <div class="elevator-info__feature-text base-text">Диаметр шахты 0,8 – 1, 5 метра Фактическая площадь лифта внутри от 0,36 - 1,5 кв</div>
-          <div class="elevator-info__line" data-item="fridge"></div>
-          <button class="elevator-info__button" type="button" data-item="fridge"></button>
-        </li>
-      </ul>
+    </div>
+    <h2 class="elevator-info__title">Легкий, компактный, без строительной бетонной шахты, машинного отделения и приямка</h2>
+    <div class="elevator-info__wrapper">
       <div class="elevator-info__elevator-image">
         <img width="147" height="387" src="./img/elevator-medium.png" alt="Вакуумный лифт">
       </div>
+      <ul class="elevator-info__features">
+        <li class="elevator-info__feature-item">
+          <div class="elevator-info__feature-title">
+            Не надо строить специальную шахту с помещением для подъемного механизма
+            <button class="elevator-info__button" type="button" data-item="shaft"></button>
+          </div>
+          <div class="elevator-info__feature-text base-text">Все устройство представляет собой высокую прозрачную трубку с вакуумным насосом размером 0,6х0,7х1м который можно разместить в любом подсобном помещении дома на расстоянии до 25 м от самого лифта</div>
+          <div class="elevator-info__line" data-item="shaft"></div>
+        </li>
+        <li class="elevator-info__feature-item">
+          <div class="elevator-info__feature-title">
+            Алюминиевый каркас
+            <button class="elevator-info__button" type="button" data-item="carcass"></button>
+          </div>
+          <div class="elevator-info__feature-text base-text">Алюминиевый каркас, в сочетании с ударопрочным поликарбонатом, дают незначительную нагрузку на плиту перекрытия и не требуют усиления конструкции</div>
+          <div class="elevator-info__line" data-item="carcass"></div>
+        </li>
+        <li class="elevator-info__feature-item">
+          <div class="elevator-info__feature-title">
+            Конструкция шахты опирается на чистовое покрытие пола
+            <button class="elevator-info__button" type="button" data-item="floor"></button>
+          </div>
+          <div class="elevator-info__feature-text base-text">Все устройство представляет собой высокую прозрачную трубку с вакуумным насосом размером 0,6х0,7х1м который можно разместить в любом подсобном помещении дома на расстоянии до 25 м от самого лифта</div>
+          <div class="elevator-info__line" data-item="floor"></div>
+        </li>
+        <li class="elevator-info__feature-item">
+          <div class="elevator-info__feature-title">
+            Вакуумный лифт весьма компактен
+            <button class="elevator-info__button" type="button" data-item="fridge"></button>
+          </div>
+          <div class="elevator-info__feature-text base-text">Диаметр шахты 0,8 – 1, 5 метра Фактическая площадь лифта внутри от 0,36 - 1,5 кв</div>
+          <div class="elevator-info__line" data-item="fridge"></div>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
-<section class="panorama">
+<section class="panorama base-section">
   <div class="container">
     <h2 class="panorama__title base-title">Бескомпромиссная панорамность</h2>
     <p class="panorama__subtitle">Мы побили все мировые рекорды по градусу обзора</p>
@@ -220,7 +253,7 @@
     </div>
   </div>
 </section>
-<section class="features">
+<section class="features base-section">
   <h2 class="visually-hidden">Безопасность лифтов</h2>
   <div class="container">
     <div class="features__wrapper">
@@ -266,7 +299,7 @@
     </ul>
   </div>
 </section>
-<section class="design">
+<section class="design base-section">
   <div class="container">
     <div class="design__wrapper">
       <h2 class="design__title base-title">Варианты отделки</h2>
@@ -408,7 +441,7 @@
     </ul>
   </div>
 </section>
-<section class="advantages">
+<section class="advantages base-section">
   <div class="container">
     <div class="advantages__wrapper">
       <h2 class="advantages__title base-title">Как мы работаем</h2>
@@ -443,7 +476,7 @@
     </ol>
   </div>
 </section>
-<section class="offer">
+<section class="offer base-section">
   <div class="container">
     <h2 class="offer__title base-title">Гарантируем лучшую цену панорамных лифтов на рынке</h2>
     <p class="offer__text base-text">Мы настолько уверенны в том, что наш модельный ряд и ценовая политика удовлетворит ваш запрос, что даем гарантию: мы покроем часть ваших расходов на покупку лифта любого другого производителя, если после встречи в нашем шоу-руме, вы не примите рещения о покупке лифта “CONTANTA”</p>

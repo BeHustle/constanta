@@ -1,0 +1,16 @@
+.model {
+  @include set-transition(opacity);
+}
+
+.model__title {
+  @include set-font(30px, 36px, 500);
+}
+
+.model p {
+  @include vertical-margin-clear;
+  margin-top: 20px;
+}
+
+.model__button {
+  margin-top: 70px;
+}

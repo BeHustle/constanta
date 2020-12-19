@@ -1,0 +1,73 @@
+.category__button {
+  @include button-normalize;
+  order: -1;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  position: relative;
+  background-image: url('../img/product-wave-grey.png');
+  background-position: center bottom -15px;
+  background-repeat: no-repeat;
+  background-size: 280px auto;
+
+  & img {
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    z-index: 0;
+    width: 100%;
+    height: 200px;
+    border: 2px solid $c-light-grey;
+    border-radius: 20px;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.category__title {
+  @include vertical-margin-clear;
+  @include set-font(24px, 28px, 500);
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+.category__inner-list {
+  @include list-style-reset;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.category__product {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.category__product-btn {
+  @include set-transition(all);
+  @include button-normalize;
+  @include set-font(16px, 24px, 500);
+  border-bottom: 1px dashed $c-light-grey;
+  color: $c-light-grey;
+}
+
+.category--active {
+  & .category__product-btn {
+    border-bottom: 1px dashed $c-blue;
+    color: $c-blue;
+  }
+
+  & .category__button {
+    background-image: url('../img/product-wave-blue.png');
+  }
+
+  & .category__button::before {
+    filter: drop-shadow(0px 0px 20px $c-blue);
+    border-color: $c-blue;
+  }
+}

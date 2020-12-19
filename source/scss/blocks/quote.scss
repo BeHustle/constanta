@@ -1,0 +1,31 @@
+.quote__text {
+  @include vertical-margin-clear;
+  color: $c-blue;
+}
+
+.quote__author-block {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quote__wrapper {
+  margin-left: 15px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote__author-name {
+  @include set-font(16px, 24px, 500);
+  font-style: normal;
+}
+
+.quote__author-position {
+  color: $c-grey;
+  font-style: normal;
+}
+
+.quote__author-sign {
+  margin-top: 5px;
+}

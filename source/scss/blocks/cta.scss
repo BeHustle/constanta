@@ -1,0 +1,16 @@
+.cta__title {
+  @include vertical-margin-clear;
+  @include set-font(45px, 60px, 500);
+  @include set-font-family('Goudy Trajan');
+  text-transform: uppercase;
+}
+
+.cta__subtitle {
+  @include vertical-margin-clear;
+  @include set-font(14px, 17px, 500);
+  margin-top: 20px;
+}
+
+.cta__btn {
+  margin-top: 60px;
+}

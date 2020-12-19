@@ -1,0 +1,54 @@
+.elevator {
+  position: absolute;
+}
+
+.elevator__plus-btn {
+  @include button-normalize;
+  @include set-transition(all);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 8px 14px -5px rgba(68, 128, 219, 0.3);
+  background-image: url('../img/circle.svg');
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  top: 320px;
+  right: 10px;
+
+  & svg {
+    @include set-transition(all);
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 8px 14px -5px rgba(68, 128, 219, 0.5);
+  }
+
+  &:active {
+    box-shadow: 0 8px 14px -5px rgba(68, 128, 219, 0.6);
+  }
+
+  &:hover svg,
+  &:focus svg {
+    transform: rotate(45deg);
+  }
+
+  &:active svg {
+    transform: rotate(0);
+  }
+
+  &:nth-child(2) {
+    top: 357px;
+    right: 177px;
+  }
+
+  &:nth-child(3) {
+    top: 584px;
+    right: 31px;
+  }
+}

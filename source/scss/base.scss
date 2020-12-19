@@ -24,3 +24,15 @@
   @include set-font(14px, 21px, 400);
   @include set-font-family('TT Norms Pro');
 }
+
+.base-section {
+  @include center;
+  width: $max-width;
+}
+
+.container {
+  @include center;
+  width: $min-width;
+  padding-left: 15px;
+  padding-right: 15px;
+}

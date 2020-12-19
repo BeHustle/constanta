@@ -1,0 +1,91 @@
+.elevator-info {
+  padding-top: 90px;
+}
+
+.elevator-info__logo {
+  text-align: center;
+}
+
+.elevator-info__title {
+  @include center;
+  @include vertical-margin-clear;
+  @include set-font(30px, 40px, 500);
+  @include set-font-family('Goudy Trajan');
+  text-align: center;
+  width: 85%;
+  margin-top: 25px;
+}
+
+.elevator-info__wrapper {
+  margin-top: 70px;
+  position: relative;
+}
+
+.elevator-info__features {
+  @include list-style-reset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.elevator-info__feature-item {
+  width: 39%;
+  margin-bottom: 50px;
+
+  &:nth-child(odd) {
+    text-align: right;
+
+    .elevator-info__feature-title,
+    .elevator-info__feature-text {
+      padding-right: 47px;
+    }
+
+    & .elevator-info__button {
+      right: 0;
+    }
+  }
+
+  &:nth-child(even) {
+    text-align: left;
+
+    .elevator-info__feature-title,
+    .elevator-info__feature-text {
+      padding-left: 47px;
+    }
+
+    & .elevator-info__button {
+      left: 0;
+    }
+  }
+}
+
+.elevator-info__elevator-image {
+  position: absolute;
+  top: -25px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.elevator-info__feature-title {
+  @include set-font(16px, 24px, 500);
+  position: relative;
+}
+
+.elevator-info__feature-text {
+  color: $c-lightest-grey;
+  margin-top: 15px;
+}
+
+.elevator-info__button {
+  @include button-normalize;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  background-image: url('../img/circle.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px auto;
+}

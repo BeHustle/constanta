@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  align-items: flex-start;
+}
+
+.header__logo {
+  margin-left: 80px;
+}
+
+.header__contacts {
+  margin-left: auto;
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header__burger {
+  margin-top: 10px;
+}
+
+.header__tel {
+  @include set-font(30px, 36px, 500);
+  color: $c-blue;
+}
+
+.header__callback-btn {
+  @include button-normalize;
+  @include set-font(13px, 16px, 500);
+  @include set-transition(color);
+  color: $c-black;
+}
+
+.header__callback-btn:hover,
+.header__callback-btn:focus {
+  color: $c-blue;
+}
+
+.header__callback-btn:active {
+  color: $c-dark-blue;
+}

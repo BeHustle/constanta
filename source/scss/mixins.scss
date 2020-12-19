@@ -8,7 +8,16 @@
   font-family: $font-name, 'Tahoma', sans-serif;
 }
 
-@mixin ul-style-reset {
+@mixin set-transition($type: all) {
+  transition: $type 0.25s ease-in;
+}
+
+@mixin center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin list-style-reset {
   list-style: none;
   padding: 0;
   margin: 0;

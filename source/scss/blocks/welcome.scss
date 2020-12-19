@@ -1,0 +1,56 @@
+.welcome {
+  background-image: url('../img/welcome-bg-top.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.welcome__container {
+  position: relative;
+}
+
+.welcome__header {
+  padding-top: 35px;
+}
+
+.welcome__elevator {
+  position: absolute;
+  display: flex;
+  top: -15px;
+  right: 262px;
+}
+
+.welcome__promo {
+  width: 550px;
+  margin-top: 140px;
+  position: relative;
+  z-index: 2;
+}
+
+.welcome__quote {
+  width: 220px;
+  margin: 0;
+  position: absolute;
+  z-index: 2;
+  top: 300px;
+  right: 0;
+}
+
+.welcome__bottom-bg {
+  position: relative;
+  height: 300px;
+  margin-top: -50px;
+  background-image: url('../img/welcome-bg-bottom.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.welcome__elevator-btn {
+  z-index: 2;
+}
+
+.welcome__elevator-container {
+  z-index: 0;
+}
