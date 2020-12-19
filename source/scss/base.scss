@@ -17,8 +17,10 @@
 
 .base-title {
   @include set-font(50px, 60px, 500);
+  @include set-font-family('Goudy Trajan');
 }
 
 .base-text {
   @include set-font(14px, 21px, 400);
+  @include set-font-family('TT Norms Pro');
 }

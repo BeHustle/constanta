@@ -4,6 +4,10 @@
   font-weight: $font-weight;
 }
 
+@mixin set-font-family($font-name) {
+  font-family: $font-name, 'Tahoma', sans-serif;
+}
+
 @mixin ul-style-reset {
   list-style: none;
   padding: 0;

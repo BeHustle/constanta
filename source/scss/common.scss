@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "TT Norms Pro", "Tahoma", sans-serif;
+  @include set-font-family('TT Norms Pro');
   color: $c-black;
 }
 
