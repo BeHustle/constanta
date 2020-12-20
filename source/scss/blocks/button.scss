@@ -1,7 +1,7 @@
 .button {
   @include button-normalize;
   @include set-transition(box-shadow);
-  padding: 15px 55px;
+  padding: 15px 56px;
   display: inline-flex;
   flex-direction: column;
   background: linear-gradient(180deg, #4582DD 0%, #1F2A66 100%), #C4C4C4;
@@ -33,6 +33,24 @@
     width: 62px;
     height: 96px;
     background-image: url('../img/elevator-btn.png');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.button--man-img {
+  padding-left: 50px;
+  padding-right: 35px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -23px;
+    width: 67px;
+    height: 89px;
+    background-image: url('../img/button-man.png');
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;

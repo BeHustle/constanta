@@ -34,12 +34,34 @@
   margin-bottom: 50px;
   position: relative;
 
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    background-color: $c-blue;
+    top: 21px;
+  }
+
   &:nth-child(odd) {
     text-align: right;
     padding-right: 47px;
 
     & .elevator-info__button {
-      right: 0;
+      right: -80px;
+      top: 60px;
+    }
+
+    &::before {
+      right: -29px;
+      width: 60px;
+    }
+
+    &::after {
+      width: 70px;
+      right: -84px;
+      transform: rotate(55deg);
+      top: 50px;
     }
   }
 
@@ -48,7 +70,20 @@
     padding-left: 47px;
 
     & .elevator-info__button {
-      left: 0;
+      left: -80px;
+      top: 60px;
+    }
+
+    &::before {
+      left: -29px;
+      width: 60px;
+    }
+
+    &::after {
+      width: 70px;
+      left: -84px;
+      transform: rotate(-55deg);
+      top: 50px;
     }
   }
 
@@ -58,6 +93,22 @@
 
   &--active .elevator-info__feature-text {
     color: rgba($c-lightest-grey, 1);
+  }
+
+  &--active:nth-child(even) {
+    & .elevator-info__button {
+      left: 0;
+      top: 5px;
+      animation: rightTranslate 1s ease-out;
+    }
+  }
+
+  &--active:nth-child(odd) {
+    & .elevator-info__button {
+      right: 0;
+      top: 5px;
+      animation: leftTranslate 1s ease-out;
+    }
   }
 }
 
@@ -71,17 +122,20 @@
 .elevator-info__feature-title {
   @include set-font(16px, 24px, 500);
   @include set-transition(color);
+  transition-delay: 1s;
   color: rgba($c-black, 0.08);
 }
 
 .elevator-info__feature-text {
-  @include set-transition(opacity);
+  @include set-transition(color);
+  transition-delay: 1s;
   color: rgba($c-lightest-grey, 0.25);
   margin-top: 15px;
 }
 
 .elevator-info__button {
   @include button-normalize;
+  z-index: 1;
   width: 32px;
   height: 32px;
   position: absolute;
@@ -90,4 +144,35 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 32px auto;
+}
+
+
+@keyframes rightTranslate {
+  0% {
+    left: -80px;
+    top: 60px;
+  }
+  50% {
+    left: -40px;
+    top: 5px;
+  }
+  100% {
+    left: 0;
+    top: 5px;
+  }
+}
+
+@keyframes leftTranslate {
+  0% {
+    right: -80px;
+    top: 60px;
+  }
+  50% {
+    right: -40px;
+    top: 5px;
+  }
+  100% {
+    right: 0;
+    top: 5px;
+  }
 }

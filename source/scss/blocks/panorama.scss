@@ -1,0 +1,30 @@
+.panorama {
+  background-image: url('../img/panorama-out-bg.png'), url('../img/panorama-inner-bg.jpg');
+  background-size: cover, cover;
+  background-position: center, left;
+  background-repeat: no-repeat, no-repeat;
+  padding: 75px 0;
+}
+
+.panorama__title {
+  @include vertical-margin-clear;
+  width: 65%;
+}
+
+.panorama__subtitle {
+  @include vertical-margin-clear;
+  @include set-font(30px, 36px, 500);
+  margin-top: 150px;
+}
+
+.panorama__content {
+  margin-top: 65px;
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.panorama__column {
+  @include vertical-margin-clear;
+  width: 45%;
+}

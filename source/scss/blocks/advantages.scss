@@ -1,0 +1,94 @@
+.advantages {
+  padding: 85px 0;
+  background: url('../img/artboard.png') left bottom no-repeat, linear-gradient(0deg, #FFFFFF 61.25%, rgba(255, 255, 255, 0) 100%), #FBFEFF;
+  background-size: cover, cover, cover;
+}
+
+.advantages__wrapper {
+  display: flex;
+}
+
+.advantages__title {
+  @include vertical-margin-clear;
+  width: 32%;
+}
+
+.advantages__text {
+  @include vertical-margin-clear;
+  width: 32%;
+  margin-left: 3%;
+}
+
+.advantages__button {
+  margin-left: auto;
+  align-self: flex-start;
+}
+
+.advantages__list {
+  @include list-style-reset;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  width: 348px;
+}
+
+.advantages__img {
+  border-radius: 10px;
+  position: relative;
+  height: 190px;
+  width: 348px;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+  }
+
+  &:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    display: block;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 33.41%, rgba(0, 0, 0, 0) 110.79%);
+    border-radius: 10px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 31px;
+    height: 31px;
+    bottom: 17px;
+    right: 16px;
+    background-image: url("../img/white-arrow.svg");
+    background-size: 31px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__number {
+  @include set-font(24px, 24px, 500);
+  color: $c-white;
+  position: absolute;
+  bottom: 22px;
+  left: 24px;
+}
+
+.advantages__item-title {
+  @include vertical-margin-clear;
+  @include set-font(16px, 24px, 500);
+  margin-top: 25px;
+}
+
+.advantages__item-text {
+  @include vertical-margin-clear;
+  margin-top: 20px;
+}

@@ -1,0 +1,28 @@
+.modal {
+  position: fixed;
+  z-index: $overlay-z-index + 1;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  padding: 65px 80px 70px 80px;
+  width: 776px;
+  border-radius: 20px;
+  background: url("../img/modal-elevator-bg.png"), url("../img/modal-bg.png"), #fbfeff;
+  background-size: 267px auto, 100% auto, cover;
+  background-position: right 50px bottom -50px, center, center;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  box-shadow: 0 29px 25px -18px rgba(0, 0, 0, 0.1);
+}
+
+.modal__title {
+  @include vertical-margin-clear;
+  @include set-font(30px, 40px, 500);
+  @include set-font-family('Goudy Trajan');
+  color: $c-dark-blue;
+}
+
+.modal__text {
+  @include vertical-margin-clear;
+  margin-top: 13px;
+  width: 320px;
+}

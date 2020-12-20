@@ -49,4 +49,15 @@
       dots: false,
     });
   });
+
+  const elevatorButtons = document.querySelectorAll('.elevator-info__button');
+  elevatorButtons.forEach((button) => {
+    button.addEventListener('click', (evt) => {
+      const currentData = evt.currentTarget.dataset.item;
+      const currentParent = document.querySelector(`.elevator-info__feature-item[data-item="${currentData}"]`);
+      if (currentParent) {
+        currentParent.classList.add('elevator-info__feature-item--active');
+      }
+    })
+  })
 })();

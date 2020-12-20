@@ -2,6 +2,21 @@
   display: none;
 }
 
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba($c-black, 0.7);
+  z-index: $overlay-z-index;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -27,7 +42,7 @@
 
 .base-section {
   @include center;
-  width: $max-width;
+  max-width: $max-width;
 }
 
 .container {

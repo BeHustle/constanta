@@ -1,0 +1,26 @@
+.offer {
+  padding-top: 115px;
+  background-image: url("../img/elevator-footer-right.png"), url("../img/elevator-footer-left.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 361px auto, 210px auto;
+  background-position: bottom -90px right -170px, bottom -45px left -55px;
+}
+
+.offer__title {
+  @include vertical-margin-clear;
+  @include center;
+  width: 95%;
+  text-align: center;
+}
+
+.offer__text {
+  @include vertical-margin-clear;
+  @include center;
+  text-align: center;
+  width: 45%;
+  margin-top: 45px;
+}
+
+.offer__footer {
+  margin-top: 160px;
+}

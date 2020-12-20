@@ -1,0 +1,83 @@
+.design {
+  padding: 100px 0;
+  background: url('../img/artboard.png') center bottom no-repeat, linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 65.55%), #FBFEFF;
+  background-size: cover, cover, cover;
+}
+
+.design__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.design__title {
+  @include vertical-margin-clear;
+  width: 33%;
+}
+
+.design__text {
+  @include vertical-margin-clear;
+  width: 58%;
+}
+
+.design__sections {
+  @include list-style-reset;
+  margin-top: 95px;
+}
+
+.design__sections-item {
+  margin-bottom: 65px;
+  display: flex;
+  justify-content: space-between;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.design__section-title {
+  @include vertical-margin-clear;
+  @include set-font(16px, 24px, 500);
+  width: 23%;
+  display: flex;
+  align-items: center;
+}
+
+.design__items {
+  @include list-style-reset;
+  display: flex;
+  align-items: center;
+  width: 74%;
+}
+
+.design__item {
+  width: 18%;
+  margin-right: 2%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.design__item-btn {
+  @include button-normalize;
+  display: flex;
+  align-items: center;
+}
+
+.design__item-text {
+  @include set-font(10px, 15px, 500);
+  color: $c-darkest-grey;
+  margin-left: 12px;
+  text-align: left;
+}
+
+.design__item-img {
+  width: 53px;
+  height: 53px;
+  flex-shrink: 0;
+}
+
+.design__show-more {
+  @include set-font(10px, 15px, 500);
+  color: $c-blue;
+}
