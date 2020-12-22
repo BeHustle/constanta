@@ -55,3 +55,66 @@
 .welcome__elevator-container {
   z-index: 0;
 }
+
+@media only screen and (max-width: $tablet-width) {
+  .welcome {
+    overflow-y: hidden;
+  }
+
+  .welcome__promo {
+    margin-top: 110px;
+    width: 460px;
+  }
+
+  .welcome__header {
+    position: relative;
+    z-index: 1;
+  }
+
+  .welcome__quote {
+    right: 20px;
+  }
+}
+
+@media only screen and (max-width: $mobile-width) {
+  .welcome {
+    padding-bottom: 50px;
+  }
+
+  .welcome__container {
+    position: relative;
+    padding-bottom: 90px;
+  }
+
+  .welcome__header {
+    padding-top: 15px;
+  }
+
+  .welcome__elevator {
+    display: none;
+  }
+
+  .welcome__promo {
+    @include center;
+    width: 95%;
+    margin-top: 50px;
+    position: static;
+  }
+
+  .welcome__quote {
+    position: static;
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .welcome__cta-btn {
+    position: absolute;
+    bottom: 0;
+    left: 7px;
+    margin-top: 0;
+  }
+
+  .welcome__bottom-bg {
+    display: none;
+  }
+}

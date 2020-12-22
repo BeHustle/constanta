@@ -41,14 +41,41 @@
   @include set-font-family('TT Norms Pro');
 }
 
-.base-section {
-  @include center;
-  max-width: $max-width;
-}
-
 .container {
   @include center;
-  width: $min-width;
+  max-width: $desktop-width;
   padding-left: 15px;
   padding-right: 15px;
 }
+
+@media only screen and (max-width: $tablet-width) {
+  .container {
+    max-width: $tablet-width;
+  }
+
+  .base-title {
+    @include set-font(40px, 50px, 500);
+  }
+
+  .base-text {
+    @include set-font(12px, 18px, 400);
+  }
+}
+
+@media only screen and (max-width: $mobile-width) {
+  .container {
+    max-width: $mobile-width;
+    min-width: $min-width;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .base-title {
+    @include set-font(25px, 35px, 500);
+  }
+
+  .base-text {
+    @include set-font(12px, 16px, 400);
+  }
+}
+

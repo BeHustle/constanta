@@ -14,3 +14,14 @@
 .model__button {
   margin-top: 70px;
 }
+
+
+@media only screen and (max-width: $tablet-width) {
+  .model__title {
+    @include set-font(20px, 30px, 500);
+  }
+
+  .model__button {
+    margin-top: 20px;
+  }
+}

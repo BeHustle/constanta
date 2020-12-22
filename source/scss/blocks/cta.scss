@@ -21,3 +21,19 @@
     opacity: 1;
   }
 }
+
+@media only screen and (max-width: $tablet-width) {
+  .cta__title {
+    @include set-font(25px, 30px, 500);
+  }
+
+  .cta__animation-container {
+    margin-top: 85px;
+  }
+}
+
+@media only screen and (max-width: $mobile-width) {
+  .cta__title {
+    @include set-font(20px, 25px, 500);
+  }
+}

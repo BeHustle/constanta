@@ -9,7 +9,9 @@ $c-lightest-grey: #C8C8C8;
 $c-dark-grey: #727272;
 $c-darkest-grey: #9D9D9D;
 
-$min-width: 1140px;
-$max-width: 1440px;
+$desktop-width: 1140px;
+$tablet-width: 800px;
+$mobile-width: 576px;
+$min-width: 320px;
 
 $overlay-z-index: 100;

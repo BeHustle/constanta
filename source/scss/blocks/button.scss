@@ -69,3 +69,18 @@
   font-style: italic;
   color: $c-blue;
 }
+
+
+@media only screen and (max-width: $tablet-width) {
+  .button {
+    padding: 10px 40px;
+  }
+}
+
+@media only screen and (max-width: $mobile-width) {
+  .button {
+    width: 100%;
+    align-items: center;
+    padding: 8px 35px;
+  }
+}

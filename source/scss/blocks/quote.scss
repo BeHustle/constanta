@@ -29,3 +29,9 @@
 .quote__author-sign {
   margin-top: 5px;
 }
+
+@media only screen and (max-width: $mobile-width) {
+  .quote__author-block {
+    justify-content: flex-start;
+  }
+}

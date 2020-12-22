@@ -7,7 +7,7 @@
   <title>Constanta - производство, продажа и монтаж электрических и вакуумных лифтов</title>
 </head>
 <body>
-<section class="welcome base-section">
+<section class="welcome">
   <div class="container welcome__container">
     <header class="welcome__header header">
       <button type="button" class="header__burger burger-btn">
@@ -46,7 +46,7 @@
     <div class="welcome__promo cta">
       <h1 class="cta__title">Производство, продажа и монтаж электрических и вакуумных лифтов</h1>
       <p class="cta__subtitle">Доставка и монтаж по всему миру</p>
-      <div class="cta__animation-container">
+      <div class="welcome__cta-btn cta__animation-container">
         <button data-modal="calculate" class="button button--elevator-img" type="button">
         <span class="button__title">Рассчитать стоимость</span>
         <span class="button__description">в течении 10 минут</span>
@@ -74,7 +74,7 @@
   </div>
   <div class="welcome__bottom-bg"></div>
 </section>
-<section class="categories base-section">
+<section class="categories">
   <div class="container">
     <h2 class="categories__title base-title">Категории лифтов</h2>
     <div class="categories__buttons">
@@ -161,7 +161,7 @@
             каталоге? Не проблема! Мы с радостью воплотим в жизнь любой дизайн и конструкцию. Наши специалисты обладают
             огромным опытом и выполнят любой проект максимально быстро и качественно, вне зависимости от сложности</p>
           <button data-modal="calculate" class="model__button button" type="button">
-            <span class="button__title">Получить специальное предложение</span>
+            <span class="button__title">Рассчитать стоимость</span>
             <span class="button__description">в течении 10 минут</span>
           </button>
         </div>
@@ -172,7 +172,7 @@
             неповторимого дизайна</p>
           <p class="base-text"> - В базовом оснащении модель достигает скорости 0,5 метров в секунду</p>
           <button data-modal="calculate" class="model__button button" type="button">
-            <span class="button__title">Получить специальное предложение</span>
+            <span class="button__title">Рассчитать стоимость</span>
             <span class="button__description">в течении 10 минут</span>
           </button>
         </div>
@@ -184,7 +184,7 @@
           <p class="base-text"> - Тихая работа </p>
           <p class="base-text"> - Круговой обзор 360</p>
           <button data-modal="calculate" class="model__button button" type="button">
-            <span class="button__title">Получить специальное предложение</span>
+            <span class="button__title">Рассчитать стоимость</span>
             <span class="button__description">в течении 10 минут</span>
           </button>
         </div>
@@ -194,7 +194,7 @@
           <p class="base-text"> - Габариты позволяют вписать даже в небольшое отверстие в перекрытии.</p>
           <p class="base-text"> - Малый вес лифта выдержит даже не усиленное деревянное перекрытие</p>
           <button data-modal="calculate" class="model__button button" type="button">
-            <span class="button__title">Получить специальное предложение</span>
+            <span class="button__title">Рассчитать стоимость</span>
             <span class="button__description">в течении 10 минут</span>
           </button>
         </div>
@@ -202,7 +202,7 @@
     </div>
   </div>
 </section>
-<section class="slider base-section">
+<section class="slider">
   <div class="container">
     <h2 class="slider__title base-title">Добавьте “wow” эффект своему&nbsp;интерьеру</h2>
     <div class="slider__images owl-carousel owl-theme">
@@ -211,7 +211,7 @@
     </div>
   </div>
 </section>
-<section class="elevator-info base-section">
+<section class="elevator-info">
   <div class="container">
     <div class="elevator-info__logo">
       <img src="./img/logo-grey.png" alt="Constanta" width="112" height="29">
@@ -287,11 +287,11 @@
     </div>
   </div>
 </section>
-<section class="features base-section">
+<section class="features">
   <h2 class="visually-hidden">Безопасность лифтов</h2>
   <div class="container">
     <div class="features__wrapper">
-      <p class="features__title base-title">Безопасный и бесшумный</p>
+      <p class="features__title base-title">Безопасный и&nbsp;бесшумный</p>
       <p class="features__text base-text">Вы никогда не застрянете в нашем лифте - <b>абсолютная безопасность!</b><br>
         Мы продумали конструкцию до мелочей. Механизм подвергался серьезным испытаниям на предприятии и только после
         окончательного этапа проверки на безопасность вакуумный лифт был представлен рынку.</p>
@@ -301,42 +301,52 @@
         <div class="features__img">
           <img width="190" height="190" src="./img/feature1.png" alt="">
         </div>
-        <p class="features__item-title">При отключении электричества</p>
-        <p class="features__item-text">При отключении электричества или любой другой аварийной остановке, система
-          безопасности с помощью выпускного клапана изменит давление в верхней части шахты и кабина плавно опустится на
-          первый этаж. Двери пассажиры смогут открыть вручную и выйти.</p>
+        <div class="features__item-wrapper">
+          <p class="features__item-title">При отключении электричества</p>
+          <p class="features__item-text">При отключении электричества или любой другой аварийной остановке, система
+            безопасности с помощью выпускного клапана изменит давление в верхней части шахты и кабина плавно опустится на
+            первый этаж. Двери пассажиры смогут открыть вручную и выйти.</p>
+        </div>
       </li>
       <li class="features__item">
         <div class="features__img">
           <img width="190" height="190" src="./img/feature2.png" alt="">
         </div>
-        <p class="features__item-title">Если пассажир забыл закрыть двери</p>
-        <p class="features__item-text">Если пассажир забыл закрыть двери, система сразу распознает невнимательность
-          пассажира с помощью сигнала открытых электромагнитных замков и кабина просто никуда не поедет</p>
+        <div class="features__item-wrapper">
+          <p class="features__item-title">Если пассажир забыл закрыть двери</p>
+          <p class="features__item-text">Если пассажир забыл закрыть двери, система сразу распознает невнимательность
+            пассажира с помощью сигнала открытых электромагнитных замков и кабина просто никуда не поедет</p>
+        </div>
       </li>
       <li class="features__item">
         <div class="features__img">
           <img width="190" height="190" src="./img/feature3.png" alt="">
         </div>
-        <p class="features__item-title">В случае разгерметизации</p>
-        <p class="features__item-text">В случае разгерметизации моментально включится тормоз наверху шахты.</p>
+        <div class="features__item-wrapper">
+          <p class="features__item-title">В случае разгерметизации</p>
+          <p class="features__item-text">В случае разгерметизации моментально включится тормоз наверху шахты.</p>
+        </div>
+
       </li>
       <li class="features__item">
         <div class="features__img">
           <img width="190" height="190" src="./img/feature4.png" alt="">
         </div>
-        <p class="features__item-title">Онлайн управления кабиной лифта</p>
-        <p class="features__item-text">Есть возможность подключить кабину к системе онлайн управления кабиной лифта
-          «умный лифт».</p>
+        <div class="features__item-wrapper">
+          <p class="features__item-title">Онлайн управления кабиной лифта</p>
+          <p class="features__item-text">Есть возможность подключить кабину к системе онлайн управления кабиной лифта «умный лифт».</p>
+        </div>
       </li>
       <li class="features__item">
         <div class="features__img">
           <img width="190" height="190" src="./img/feature5.png" alt="">
         </div>
-        <p class="features__item-title">Лифт работает практически бесшумно</p>
-        <p class="features__item-text">Лифт оснащен блокирующими устройствами внутри шахты для остановки в крайнем
-          верхнем и нижнем положениях. Запуск и остановка происходят очень плавно - лифт работает практически
-          бесшумно.</p>
+        <div class="features__item-wrapper">
+          <p class="features__item-title">Лифт работает практически бесшумно</p>
+          <p class="features__item-text">Лифт оснащен блокирующими устройствами внутри шахты для остановки в крайнем
+            верхнем и нижнем положениях. Запуск и остановка происходят очень плавно - лифт работает практически
+            бесшумно.</p>
+        </div>
       </li>
     </ul>
   </div>
@@ -489,7 +499,7 @@
     </ul>
   </div>
 </section>
-<section class="advantages">
+<section class="d-none advantages">
   <div class="container">
     <div class="advantages__wrapper">
       <h2 class="advantages__title base-title">Как мы работаем</h2>
@@ -534,7 +544,7 @@
     </ol>
   </div>
 </section>
-<section class="offer">
+<section class="d-none offer">
   <div class="container">
     <h2 class="offer__title base-title">Гарантируем лучшую цену панорамных лифтов на рынке</h2>
     <p class="offer__text base-text">Мы настолько уверенны в том, что наш модельный ряд и ценовая политика удовлетворит

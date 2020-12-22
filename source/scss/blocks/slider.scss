@@ -45,3 +45,45 @@
     background-image: url('../img/arrow-right.svg')!important;
   }
 }
+
+
+@media only screen and (max-width: $tablet-width) {
+  .slider {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+
+  .slider__images {
+    margin-top: 35px;
+    position: relative;
+
+    & .owl-prev,
+    & .owl-next {
+      width: 35px;
+      height: 35px;
+      background-size: 35px auto;
+    }
+
+    & .owl-prev {
+      left: 20px;
+    }
+
+    & .owl-next {
+      right: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile-width) {
+  .slider__images {
+    margin-top: 25px;
+
+    & .owl-prev {
+      left: 10px;
+    }
+
+    & .owl-next {
+      right: 10px;
+    }
+  }
+}
