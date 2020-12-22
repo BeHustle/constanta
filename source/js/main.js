@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
     openBtn.addEventListener('click', (evt) => {
       const image = evt.currentTarget.dataset.img;
       console.log(image);
-      imageModal.style.background = `url("./img/${image}")`;
+      imageModal.style.backgroundImage = `url("./img/${image}")`;
       overlay.classList.remove('hidden');
       imageModal.classList.remove('hidden');
     });

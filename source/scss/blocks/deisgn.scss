@@ -81,3 +81,88 @@
   @include set-font(10px, 15px, 500);
   color: $c-blue;
 }
+
+@media only screen and (max-width: 920px) {
+  .design {
+    padding: 70px 0;
+  }
+
+  .design__sections {
+    margin-top: 60px;
+  }
+
+  .design__sections-item {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .design__section-title {
+    width: 100%;
+  }
+
+  .design__items {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: $tablet-width) {
+  .design__wrapper {
+    flex-wrap: wrap;
+  }
+
+  .design__title {
+    width: 100%;
+  }
+
+  .design__text {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .design__item {
+    width: 21%;
+
+    &:last-child {
+      width: 15%;
+    }
+  }
+
+  .design__item-img {
+    flex-shrink: 0;
+
+    & img {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  .design__item-text {
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (max-width: $mobile-width) {
+  .design__items {
+    flex-wrap: wrap;
+  }
+
+  .design__item-img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .design__item-text {
+    margin-left: 15px;
+  }
+
+  .design__item {
+    width: 100%;
+    margin-bottom: 7px;
+
+    &:last-child {
+      width: 100%;
+      margin-bottom: 0;
+    }
+  }
+}

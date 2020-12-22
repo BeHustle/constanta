@@ -24,3 +24,25 @@
 .offer__footer {
   margin-top: 160px;
 }
+
+
+@media only screen and (max-width: $tablet-width) {
+  .offer {
+    padding-top: 40px;
+  }
+}
+
+@media only screen and (max-width: $mobile-width) {
+  .offer {
+    background: none;
+  }
+
+  .offer__text {
+    width: 100%;
+  }
+
+  .offer__footer {
+    margin-top: 0;
+  }
+}
+

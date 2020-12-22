@@ -6,7 +6,7 @@
   right: 50%;
   transform: translate(50%, 50%);
   padding: 65px 80px 70px 80px;
-  width: 776px;
+  width: 740px;
   border-radius: 20px;
   background: url("../img/modal-elevator-bg.png"), url("../img/modal-bg.png"), #fbfeff;
   background-size: 267px auto, 100% auto, cover;
@@ -52,7 +52,7 @@
 
 .modal__input {
   @include set-font(14px, 21px, 400);
-  @include set-font('TT Norms Pro');
+  @include set-font-family('TT Norms Pro');
   display: block;
   width: 100%;
   background: $c-white;
@@ -104,5 +104,90 @@
     bottom: 50%;
     transform: translateY(50%);
     right: 0;
+  }
+}
+
+@media only screen and (max-width: $tablet-width) {
+  .modal {
+    width: 80vw;
+    padding: 35px;
+  }
+
+  .modal__title {
+    @include set-font(24px, 30px, 500);
+  }
+
+  .modal__text {
+    width: 100%;
+  }
+
+  .modal__form {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .modal__input {
+    @include set-font(14px, 21px, 400);
+    border-radius: 50px;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .modal__button {
+    padding-left: 45px;
+  }
+}
+
+@media only screen and (max-width: $mobile-width) {
+  .modal {
+    width: 90vw;
+    padding: 15px;
+  }
+
+  .modal__title {
+    @include set-font(24px, 30px, 500);
+  }
+
+  .modal__text {
+    width: 100%;
+  }
+
+  .modal__form {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .modal__input {
+    @include set-font(14px, 21px, 400);
+    border-radius: 50px;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+
+  .modal__close {
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .modal__button {
+    margin: 0;
+    margin-top: 15px;
+
+    &:before {
+      display: none;
+    }
   }
 }

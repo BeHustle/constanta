@@ -75,6 +75,16 @@
   .button {
     padding: 10px 40px;
   }
+
+  .button--elevator-img {
+    padding-left: 45px;
+    padding-right: 35px;
+  }
+
+  .button--man-img {
+    padding-left: 45px;
+    padding-right: 35px;
+  }
 }
 
 @media only screen and (max-width: $mobile-width) {
