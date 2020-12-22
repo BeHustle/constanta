@@ -99,7 +99,7 @@
     & .elevator-info__button {
       left: 0;
       top: 5px;
-      animation: rightTranslate 1s ease-out;
+      animation: rightTranslate 0.7s ease-out;
     }
   }
 
@@ -107,7 +107,7 @@
     & .elevator-info__button {
       right: 0;
       top: 5px;
-      animation: leftTranslate 1s ease-out;
+      animation: leftTranslate 0.7s ease-out;
     }
   }
 }
@@ -122,13 +122,13 @@
 .elevator-info__feature-title {
   @include set-font(16px, 24px, 500);
   @include set-transition(color);
-  transition-delay: 1s;
+  transition-delay: 0.7s;
   color: rgba($c-black, 0.08);
 }
 
 .elevator-info__feature-text {
   @include set-transition(color);
-  transition-delay: 1s;
+  transition-delay: 0.7s;
   color: rgba($c-lightest-grey, 0.25);
   margin-top: 15px;
 }

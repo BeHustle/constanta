@@ -19,13 +19,14 @@
       <div class="header__logo"><img width="162" height="42" src="./img/logo-header.png" alt="Constanta"></div>
       <div class="header__contacts">
         <a href="tel:84952018015" class="header__tel">8 495 201 80 15</a>
-        <button type="button" class="header__callback-btn">Заказать обратный звонок</button>
+        <span class="header__animation-container">
+          <button data-modal="callback" type="button" class="header__callback-btn">Заказать обратный звонок</button>
+        </span>
       </div>
     </header>
     <div class="welcome__elevator elevator">
-      <div class="welcome__elevator-container elevator__container"><img width="322" height="1087"
-                                                                        src="./img/elevator-big.png"
-                                                                        alt="Вакуумный лифт"></div>
+      <div class="welcome__elevator-container elevator__container">
+        <img width="322" height="900" src="./img/elevator-big.png" alt="Вакуумный лифт"></div>
       <button type="button" data-info="1" class="welcome__elevator-btn elevator__plus-btn">
         <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 6.48H4.32V10.8H6.36V6.48H10.68V4.32H6.36V0H4.32V4.32H0V6.48Z" fill="white"/>
@@ -45,10 +46,12 @@
     <div class="welcome__promo cta">
       <h1 class="cta__title">Производство, продажа и монтаж электрических и вакуумных лифтов</h1>
       <p class="cta__subtitle">Доставка и монтаж по всему миру</p>
-      <button class="cta__btn button button--elevator-img" type="button">
+      <div class="cta__animation-container">
+        <button data-modal="calculate" class="button button--elevator-img" type="button">
         <span class="button__title">Рассчитать стоимость</span>
         <span class="button__description">в течении 10 минут</span>
       </button>
+      </div>
     </div>
     <blockquote class="welcome__quote quote">
       <p class="quote__text base-text">
@@ -75,8 +78,8 @@
   <div class="container">
     <h2 class="categories__title base-title">Категории лифтов</h2>
     <div class="categories__buttons">
-      <button data-category="current-collection" class="categories__button categories__button--active">Готовый модельный
-        ряд
+      <button data-category="current-collection" class="categories__button categories__button--active">
+        Готовый модельный ряд
       </button>
       <button data-category="new-order" class="categories__button">Под заказ</button>
     </div>
@@ -126,7 +129,7 @@
             не только распашные, но и автоматические двери, которые позволяют дополнительно экономить пространство.</p>
           <p class="base-text"> У прямоугольных электрических лифтов на одном этаже видны только 4 стойки и один пояс.
             Толщина стоек всего 9 см. Это обеспечивает панорамность до 90%</p>
-          <button class="model__button button" type="button">
+          <button data-modal="catalog" class="model__button button" type="button">
             <span class="button__title">Получить каталог</span>
             <span class="button__description">в течении 10 минут</span>
           </button>
@@ -137,7 +140,7 @@
             не только распашные, но и автоматические двери, которые позволяют дополнительно экономить пространство.</p>
           <p class="base-text"> У прямоугольных электрических лифтов на одном этаже видны только 4 стойки и один пояс.
             Толщина стоек всего 9 см. Это обеспечивает панорамность до 90%</p>
-          <button class="model__button button" type="button">
+          <button data-modal="catalog" class="model__button button" type="button">
             <span class="button__title">Получить каталог</span>
             <span class="button__description">в течении 10 минут</span>
           </button>
@@ -147,7 +150,7 @@
           <p class="base-text">В нашей коллекции насчитывается более сотни лифтов. Каждый лифт прошел все необходимые
             тесты и опробован десятками заказчиков. В кратчайшие срок мы готовы собрать и установить вам любую из наших
             моделей</p>
-          <button class="model__button button" type="button">
+          <button data-modal="catalog" class="model__button button" type="button">
             <span class="button__title">Получить каталог</span>
             <span class="button__description">в течении 10 минут</span>
           </button>
@@ -157,7 +160,7 @@
           <p class="base-text">Хотите получить лифт в уникальном дизайне или не нашли подходящего варианта в нашем
             каталоге? Не проблема! Мы с радостью воплотим в жизнь любой дизайн и конструкцию. Наши специалисты обладают
             огромным опытом и выполнят любой проект максимально быстро и качественно, вне зависимости от сложности</p>
-          <button class="model__button button" type="button">
+          <button data-modal="calculate" class="model__button button" type="button">
             <span class="button__title">Получить специальное предложение</span>
             <span class="button__description">в течении 10 минут</span>
           </button>
@@ -168,7 +171,7 @@
           <p class="base-text"> - Широкий спектр отделочных материалов и дополнительных опция позволяет добиться
             неповторимого дизайна</p>
           <p class="base-text"> - В базовом оснащении модель достигает скорости 0,5 метров в секунду</p>
-          <button class="model__button button" type="button">
+          <button data-modal="calculate" class="model__button button" type="button">
             <span class="button__title">Получить специальное предложение</span>
             <span class="button__description">в течении 10 минут</span>
           </button>
@@ -180,7 +183,7 @@
           <p class="base-text"> - 460 вариантов отделки </p>
           <p class="base-text"> - Тихая работа </p>
           <p class="base-text"> - Круговой обзор 360</p>
-          <button class="model__button button" type="button">
+          <button data-modal="calculate" class="model__button button" type="button">
             <span class="button__title">Получить специальное предложение</span>
             <span class="button__description">в течении 10 минут</span>
           </button>
@@ -190,7 +193,7 @@
           <p class="base-text"> - Данная модель идеально подходит для перемещения 1-го человека.</p>
           <p class="base-text"> - Габариты позволяют вписать даже в небольшое отверстие в перекрытии.</p>
           <p class="base-text"> - Малый вес лифта выдержит даже не усиленное деревянное перекрытие</p>
-          <button class="model__button button" type="button">
+          <button data-modal="calculate" class="model__button button" type="button">
             <span class="button__title">Получить специальное предложение</span>
             <span class="button__description">в течении 10 минут</span>
           </button>
@@ -352,26 +355,26 @@
         <p class="design__section-title">Варианты оформления стенных панелей кабины лифта:</p>
         <ul class="design__items">
           <li class="design__item">
-            <button type="button" class="design__item-btn">
+            <button data-img="design-bg.jpg" type="button" class="design__item-btn">
               <span class="design__item-img"><img width="53" height="53" src="./img/design1.png" alt="Шлифованный K240"></span>
               <span class="design__item-text">Шлифованный K240</span>
             </button>
           </li>
           <li class="design__item">
-            <button type="button" class="design__item-btn">
+            <button data-img="design-bg.jpg" type="button" class="design__item-btn">
               <span class="design__item-img"><img width="53" height="53" src="./img/design2.png"
                                                   alt="Шлифованный INOX-TEC"></span>
               <span class="design__item-text">Шлифованный INOX-TEC</span>
             </button>
           </li>
           <li class="design__item">
-            <button type="button" class="design__item-btn">
+            <button data-img="design-bg.jpg" type="button" class="design__item-btn">
               <span class="design__item-img"><img width="53" height="53" src="./img/design3.png" alt="Жемчуг"></span>
               <span class="design__item-text">Жемчуг</span>
             </button>
           </li>
           <li class="design__item">
-            <button type="button" class="design__item-btn">
+            <button data-img="design-bg.jpg" type="button" class="design__item-btn">
               <span class="design__item-img"><img width="53" height="53" src="./img/design4.png" alt="Полоса I"></span>
               <span class="design__item-text">Полоса I</span>
             </button>
@@ -387,26 +390,26 @@
         <p class="design__section-title">Варианты оформления пола:</p>
         <ul class="design__items">
           <li class="design__item">
-            <button type="button" class="design__item-btn">
+            <button data-img="design-bg.jpg" type="button" class="design__item-btn">
               <span class="design__item-img"><img width="53" height="53" src="./img/design5.png" alt="Шлифованный K240"></span>
               <span class="design__item-text">Шлифованный K240</span>
             </button>
           </li>
           <li class="design__item">
-            <button type="button" class="design__item-btn">
+            <button data-img="design-bg.jpg" type="button" class="design__item-btn">
               <span class="design__item-img"><img width="53" height="53" src="./img/design6.png"
                                                   alt="Шлифованный INOX-TEC"></span>
               <span class="design__item-text">Шлифованный INOX-TEC</span>
             </button>
           </li>
           <li class="design__item">
-            <button type="button" class="design__item-btn">
+            <button data-img="design-bg.jpg" type="button" class="design__item-btn">
               <span class="design__item-img"><img width="53" height="53" src="./img/design7.png" alt="Жемчуг"></span>
               <span class="design__item-text">Жемчуг</span>
             </button>
           </li>
           <li class="design__item">
-            <button type="button" class="design__item-btn">
+            <button data-img="design-bg.jpg" type="button" class="design__item-btn">
               <span class="design__item-img"><img width="53" height="53" src="./img/design8.png" alt="Полоса I"></span>
               <span class="design__item-text">Полоса I</span>
             </button>
@@ -422,26 +425,26 @@
         <p class="design__section-title">Варианты окраски дверных панелей:</p>
         <ul class="design__items">
           <li class="design__item">
-            <button type="button" class="design__item-btn">
+            <button data-img="design-bg.jpg" type="button" class="design__item-btn">
               <span class="design__item-img"><img width="53" height="53" src="./img/design9.png" alt="Шлифованный K240"></span>
               <span class="design__item-text">Шлифованный K240</span>
             </button>
           </li>
           <li class="design__item">
-            <button type="button" class="design__item-btn">
+            <button data-img="design-bg.jpg" type="button" class="design__item-btn">
               <span class="design__item-img"><img width="53" height="53" src="./img/design10.png"
                                                   alt="Шлифованный INOX-TEC"></span>
               <span class="design__item-text">Шлифованный INOX-TEC</span>
             </button>
           </li>
           <li class="design__item">
-            <button type="button" class="design__item-btn">
+            <button data-img="design-bg.jpg" type="button" class="design__item-btn">
               <span class="design__item-img"><img width="53" height="53" src="./img/design11.png" alt="Жемчуг"></span>
               <span class="design__item-text">Жемчуг</span>
             </button>
           </li>
           <li class="design__item">
-            <button type="button" class="design__item-btn">
+            <button data-img="design-bg.jpg" type="button" class="design__item-btn">
               <span class="design__item-img"><img width="53" height="53" src="./img/design12.png" alt="Полоса I"></span>
               <span class="design__item-text">Полоса I</span>
             </button>
@@ -457,21 +460,21 @@
         <p class="design__section-title">Варианты освещения потолка внутри кабины лифта:</p>
         <ul class="design__items">
           <li class="design__item">
-            <button type="button" class="design__item-btn">
+            <button data-img="design-bg.jpg" type="button" class="design__item-btn">
               <span class="design__item-img"><img width="53" height="53" src="./img/design13.png"
                                                   alt="Шлифованный K240"></span>
               <span class="design__item-text">Шлифованный K240</span>
             </button>
           </li>
           <li class="design__item">
-            <button type="button" class="design__item-btn">
+            <button data-img="design-bg.jpg" type="button" class="design__item-btn">
               <span class="design__item-img"><img width="53" height="53" src="./img/design14.png"
                                                   alt="Шлифованный INOX-TEC"></span>
               <span class="design__item-text">Шлифованный INOX-TEC</span>
             </button>
           </li>
           <li class="design__item">
-            <button type="button" class="design__item-btn">
+            <button data-img="design-bg.jpg" type="button" class="design__item-btn">
               <span class="design__item-img"><img width="53" height="53" src="./img/design15.png" alt="Жемчуг"></span>
               <span class="design__item-text">Жемчуг</span>
             </button>
@@ -493,7 +496,7 @@
       <p class="advantages__text base-text">Широкий выбор доступных вариантов отделки, цветовых решений и возможностей
         освещения кабины, удовлетворяет самым взыскательным требованиям и позволяет индивидуализировать домашний лифт по
         вашему вкусу</p>
-      <button type="button" class="advantages__button button button--man-img">
+      <button data-modal="calculate" type="button" class="advantages__button button button--man-img">
         <span class="button__title">Рассчитать стоимость</span>
         <span class="button__description">в течении 10 минут</span>
       </button>
@@ -546,7 +549,7 @@
           <img width="112" height="29" src="./img/logo-footer.png" alt="Constanta">
         </div>
         <p class="footer__text">Федеральный производитель электрических и вакуумных лифтов</p>
-        <button type="button" class="footer__button button">
+        <button data-modal="catalog" type="button" class="footer__button button">
           <span class="button__title">Получить каталог</span>
           <span class="button__description">в течении 10 минут</span>
         </button>
@@ -558,43 +561,49 @@
     </footer>
   </div>
 </section>
-<div class="overlay"></div>
-<div class="modal">
+<div class="overlay hidden"></div>
+<div data-modal-item="callback" class="modal hidden">
   <p class="modal__title">Обратный звонок</p>
   <p class="modal__text base-text">Закажите обратный звонок и мы ответим на ваши вопросы</p>
   <form action="#" method="post" class="modal__form">
     <input class="modal__input" type="text" name="name" placeholder="Введите ваше имя">
     <input class="modal__input" type="text" name="tel" placeholder="+7(999)999-99-99">
+    <button type="submit" class="modal__button button button--man-img">
+      <span class="button__title">Отправить заявку на звонок</span>
+      <span class="button__description">в течении 10 минут</span>
+    </button>
   </form>
-  <button type="submit" class="modal__button button button--man-img">
-    <span class="button__title">Отправить заявку на звонок</span>
-    <span class="button__description">в течении 10 минут</span>
-  </button>
+  <button type="button" class="modal__close" aria-label="Закрыть модальное окно"></button>
 </div>
-<div class="modal d-none">
+<div data-modal-item="catalog" class="modal hidden">
   <p class="modal__title">Получить каталог</p>
   <p class="modal__text base-text">Закажите обратный звонок и мы ответим на ваши вопросы</p>
   <form action="#" method="post" class="modal__form">
     <input class="modal__input" type="text" name="name" placeholder="Введите ваше имя">
     <input class="modal__input" type="text" name="tel" placeholder="+7(999)999-99-99">
+    <button type="submit" class="modal__button button button--man-img">
+      <span class="button__title">Отправить заявку на звонок</span>
+      <span class="button__description">в течении 10 минут</span>
+    </button>
   </form>
-  <button type="submit" class="modal__button button button--man-img">
-    <span class="button__title">Отправить заявку на звонок</span>
-    <span class="button__description">в течении 10 минут</span>
-  </button>
+  <button type="button" class="modal__close" aria-label="Закрыть модальное окно"></button>
 </div>
-<div class="modal modal--calc-bg d-none">
+<div data-modal-item="calculate" class="modal modal--calc-bg hidden">
   <p class="modal__title">Рассчитать стоимость</p>
   <p class="modal__text base-text">Закажите обратный звонок и мы ответим на ваши вопросы</p>
   <form action="#" method="post" class="modal__form">
     <input class="modal__input" type="text" name="name" placeholder="Введите ваше имя">
     <input class="modal__input" type="text" name="tel" placeholder="+7(999)999-99-99">
+    <button type="submit" class="modal__button button button--man-img">
+      <span class="button__title">Отправить заявку на звонок</span>
+      <span class="button__description">в течении 10 минут</span>
+    </button>
   </form>
-  <button type="submit" class="modal__button button button--man-img">
-    <span class="button__title">Отправить заявку на звонок</span>
-    <span class="button__description">в течении 10 минут</span>
-  </button>
+  <button type="button" class="modal__close" aria-label="Закрыть модальное окно"></button>
 </div>
-<script src="./js/main-min.js"></script>
+<div class="modal modal--img hidden">
+  <button type="button" class="modal__close" aria-label="Закрыть модальное окно"></button>
+</div>
+<script src="./js/main.js"></script>
 </body>
 </html>

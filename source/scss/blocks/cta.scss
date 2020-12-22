@@ -11,6 +11,13 @@
   margin-top: 20px;
 }
 
-.cta__btn {
+.cta__animation-container {
   margin-top: 60px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+  transition-delay: 0.5s;
+
+  &--visible {
+    opacity: 1;
+  }
 }

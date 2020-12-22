@@ -41,3 +41,13 @@
 .header__callback-btn:active {
   color: $c-dark-blue;
 }
+
+.header__animation-container {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+  transition-delay: 0.5s;
+
+  &--visible {
+    opacity: 1;
+  }
+}

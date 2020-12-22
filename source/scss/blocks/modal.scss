@@ -1,4 +1,5 @@
 .modal {
+  @include set-transition(all);
   position: fixed;
   z-index: $overlay-z-index + 1;
   bottom: 50%;
@@ -9,9 +10,26 @@
   border-radius: 20px;
   background: url("../img/modal-elevator-bg.png"), url("../img/modal-bg.png"), #fbfeff;
   background-size: 267px auto, 100% auto, cover;
-  background-position: right 50px bottom -50px, center, center;
+  background-position: right 40px bottom, center, center;
   background-repeat: no-repeat, no-repeat, no-repeat;
   box-shadow: 0 29px 25px -18px rgba(0, 0, 0, 0.1);
+
+  &--calc-bg {
+    background: url("../img/modal-calc-bg.png"), #F7F6F0;
+    background-size: 100% auto, cover;
+    background-position: center, center;
+    background-repeat: no-repeat, no-repeat;
+  }
+
+  &--img {
+    padding: 0;
+    width: 700px;
+    height: 400px;
+    background: $c-white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
 }
 
 .modal__title {
@@ -25,4 +43,66 @@
   @include vertical-margin-clear;
   margin-top: 13px;
   width: 320px;
+}
+
+.modal__form {
+  margin-top: 45px;
+  width: 350px;
+}
+
+.modal__input {
+  @include set-font(14px, 21px, 400);
+  @include set-font('TT Norms Pro');
+  display: block;
+  width: 100%;
+  background: $c-white;
+  border: 1px solid #F4F4F4;
+  box-sizing: border-box;
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.03);
+  border-radius: 100px;
+  height: 70px;
+  padding: 0 35px;
+  margin-bottom: 25px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.modal__button {
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.modal__close {
+  @include button-normalize;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  transform:rotate(45deg);
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background: $c-blue;
+  }
+
+  &::before {
+    width: 30%;
+    height: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 0;
+  }
+
+  &::after {
+    height: 30%;
+    width: 100%;
+    bottom: 50%;
+    transform: translateY(50%);
+    right: 0;
+  }
 }
