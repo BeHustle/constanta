@@ -148,6 +148,11 @@
     & img {
       height: auto;
     }
+
+    &::after {
+      transform: rotate(90deg);
+      bottom: 10px;
+    }
   }
 
   .advantages__item-wrapper {
@@ -181,5 +186,6 @@
 
   .advantages__img {
     width: 100%;
+    display: none;
   }
 }

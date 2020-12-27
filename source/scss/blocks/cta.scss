@@ -35,5 +35,12 @@
 @media only screen and (max-width: $mobile-width) {
   .cta__title {
     @include set-font(20px, 25px, 500);
+    position: relative;
+    z-index: 1;
+  }
+
+  .cta__subtitle {
+    position: relative;
+    z-index: 1;
   }
 }

@@ -1,0 +1,51 @@
+.no-animated {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.animated {
+  opacity: 1;
+  visibility: visible;
+}
+
+.animleft {
+  animation-delay: 0.15s;
+  animation: fromLeft 0.7s ease-out;
+}
+
+.animright {
+  animation-delay: 0.1s;
+  animation: fromRight 0.7s ease-out;
+}
+
+.animtop {
+  animation-delay: 0.1s;
+  animation: fromBottom 0.7s ease-out;
+}
+
+@keyframes fromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fromBottom {
+  0% {
+    transform: translateY(150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

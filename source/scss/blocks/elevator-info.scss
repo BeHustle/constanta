@@ -1,5 +1,6 @@
 .elevator-info {
   padding-top: 90px;
+  padding-bottom: 50px;
 }
 
 .elevator-info__logo {
@@ -179,6 +180,10 @@
 
 
 @media only screen and (max-width: $tablet-width) {
+  .elevator-info {
+    padding-bottom: 0;
+  }
+
   .elevator-info__title {
     @include set-font(25px, 35px, 500);
     width: 100%;

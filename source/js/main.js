@@ -4,16 +4,27 @@ document.addEventListener('DOMContentLoaded', () => {
     burgerBtn.classList.toggle('burger-btn--open');
   });
 
+  const itemsToAnimate = document.querySelectorAll('[data-animate]');
   const headerAnimation = document.querySelector('.header__animation-container');
   const ctaAnimation = document.querySelector('.cta__animation-container');
+  const ctaBlock = document.querySelector('.cta');
+  const quoteBlock = document.querySelector('.quote');
 
-  const showButtons = () => {
+  const animateHeader = () => {
     window.setTimeout(() => {
-      headerAnimation.classList.add('header__animation-container--visible');
+      ctaBlock.classList.remove('no-animated');
+      ctaBlock.classList.add('animated');
+      ctaBlock.classList.add('animleft');
     }, 500);
     window.setTimeout(() => {
-      ctaAnimation.classList.add('cta__animation-container--visible');
+      quoteBlock.classList.add('no-animated');
+      quoteBlock.classList.add('animated');
+      quoteBlock.classList.add('animright');
     }, 1000);
+    window.setTimeout(() => {
+      ctaAnimation.classList.add('cta__animation-container--visible');
+      headerAnimation.classList.add('header__animation-container--visible');
+    }, 1200);
   };
 
   const models = document.querySelectorAll('.model');
@@ -24,8 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const showModel = (model) => {
     const currentModel = document.querySelector(`.model[data-inner="${model}"]`);
     if (currentModel) {
-      models.forEach((model) => model.classList.add('d-none'));
-      currentModel.classList.remove('d-none');
+      models.forEach((model) => model.classList.remove('model--visible'));
+      currentModel.classList.add('model--visible');
     }
   };
 
@@ -115,6 +126,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  window.addEventListener('scroll', () => {
+    itemsToAnimate.forEach((item) => {
+      if (item.classList.contains('no-animated')) {
+        const offset = item.offsetTop - document.documentElement.scrollTop - document.documentElement.clientHeight + 100;
+        if (offset < 0) {
+          item.classList.remove('no-animated');
+          item.classList.add('animated');
+          item.classList.add(`${item.dataset.animate}`);
+        }
+      }
+    });
+  });
+
   hideModals();
-  showButtons();
+  animateHeader();
 });

@@ -58,10 +58,19 @@
   flex-direction: column;
 }
 
+.categories__calculate-btn {
+  visibility: hidden;
+}
+
 @media only screen and (max-width: $tablet-width) {
   .categories {
     padding-top: 40px;
     padding-bottom: 30px;
+  }
+
+  .categories__calculate-btn {
+    visibility: visible;
+    margin-top: 30px;
   }
 
   .categories__container {
@@ -76,6 +85,7 @@
   .categories__inner {
     width: 100%;
     margin-top: 25px;
+    order: -1;
   }
 }
 

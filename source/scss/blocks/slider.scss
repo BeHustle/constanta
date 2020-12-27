@@ -12,22 +12,29 @@
 
   & .owl-prev,
   & .owl-next {
+    @include set-transition(transform);
     margin: 0!important;
     width: 48px;
     height: 48px;
     position: absolute;
     bottom: 50%;
-    transform: translateY(50%);
+    transform: translate(0, 50%);
     background-size: 48px auto;
     background-position: center;
     background-repeat: no-repeat;
+    outline: none;
   }
 
   & .owl-prev:focus,
-  & .owl-prev:hover,
+  & .owl-prev:hover {
+    background-color: transparent!important;
+    transform: translate(-12px, 50%);
+  }
+
   & .owl-next:hover,
   & .owl-next:focus {
     background-color: transparent!important;
+    transform: translate(12px, 50%);
   }
 
   & .owl-prev span,

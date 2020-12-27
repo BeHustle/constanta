@@ -11,6 +11,7 @@ html {
 body {
   @include set-font-family('TT Norms Pro');
   color: $c-black;
+  overflow-x: hidden;
 }
 
 img {

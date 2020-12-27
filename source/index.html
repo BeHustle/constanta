@@ -10,13 +10,13 @@
 <section class="welcome">
   <div class="container welcome__container">
     <header class="welcome__header header">
-      <button type="button" class="header__burger burger-btn">
+      <button style="display: none" type="button" class="header__burger burger-btn">
         <span></span>
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <div class="header__logo"><img width="162" height="42" src="./img/logo-header.png" alt="Constanta"></div>
+      <div style="margin-left: 0;" class="header__logo"><img width="162" height="42" src="./img/logo-header.png" alt="Constanta"></div>
       <div class="header__contacts">
         <a href="tel:84952018015" class="header__tel">8 495 201 80 15</a>
         <span class="header__animation-container">
@@ -27,23 +27,23 @@
     <div class="welcome__elevator elevator">
       <div class="welcome__elevator-container elevator__container">
         <img width="322" height="900" src="./img/elevator-big.png" alt="Вакуумный лифт"></div>
-      <button type="button" data-info="1" class="welcome__elevator-btn elevator__plus-btn">
+      <button style="display: none" type="button" data-info="1" class="welcome__elevator-btn elevator__plus-btn">
         <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 6.48H4.32V10.8H6.36V6.48H10.68V4.32H6.36V0H4.32V4.32H0V6.48Z" fill="white"/>
         </svg>
       </button>
-      <button type="button" data-info="2" class="welcome__elevator-btn elevator__plus-btn">
+      <button style="display: none" type="button" data-info="2" class="welcome__elevator-btn elevator__plus-btn">
         <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 6.48H4.32V10.8H6.36V6.48H10.68V4.32H6.36V0H4.32V4.32H0V6.48Z" fill="white"/>
         </svg>
       </button>
-      <button type="button" data-info="3" class="welcome__elevator-btn elevator__plus-btn">
+      <button style="display: none" type="button" data-info="3" class="welcome__elevator-btn elevator__plus-btn">
         <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 6.48H4.32V10.8H6.36V6.48H10.68V4.32H6.36V0H4.32V4.32H0V6.48Z" fill="white"/>
         </svg>
       </button>
     </div>
-    <div class="welcome__promo cta">
+    <div class="welcome__promo cta no-animated">
       <h1 class="cta__title">Производство, продажа и монтаж электрических и вакуумных лифтов</h1>
       <p class="cta__subtitle">Доставка и монтаж по всему миру</p>
       <div class="welcome__cta-btn cta__animation-container">
@@ -53,7 +53,7 @@
       </button>
       </div>
     </div>
-    <blockquote class="welcome__quote quote">
+    <blockquote class="welcome__quote quote no-animated">
       <p class="quote__text base-text">
         Чтобы добиться самого эстетичного вида лифта и 93% площади остекления мы практически изобрели лифты заново
       </p>
@@ -76,14 +76,14 @@
 </section>
 <section class="categories">
   <div class="container">
-    <h2 class="categories__title base-title">Категории лифтов</h2>
-    <div class="categories__buttons">
+    <h2 data-animate="animleft" class="categories__title base-title no-animated">Категории лифтов</h2>
+    <div data-animate="animleft" class="categories__buttons no-animated">
       <button data-category="current-collection" class="categories__button categories__button--active">
         Готовый модельный ряд
       </button>
       <button data-category="new-order" class="categories__button">Под заказ</button>
     </div>
-    <div class="categories__container">
+    <div data-animate="animtop" class="categories__container no-animated">
       <ul class="categories__list">
         <li data-category="vacuum" class="categories__item category category--active">
           <h3 class="category__title">Вакуумные</h3>
@@ -123,7 +123,7 @@
         </li>
       </ul>
       <div class="categories__inner">
-        <div class="model" data-inner="vacuum">
+        <div class="model model--visible" data-inner="vacuum">
           <div class="model__title">Вакуумные</div>
           <p class="base-text">По сравнению с вакуумными, электрические имеют более плавный ход и возможность установить
             не только распашные, но и автоматические двери, которые позволяют дополнительно экономить пространство.</p>
@@ -134,7 +134,7 @@
             <span class="button__description">в течении 10 минут</span>
           </button>
         </div>
-        <div class="model d-none" data-inner="electric">
+        <div class="model" data-inner="electric">
           <div class="model__title">Электрические</div>
           <p class="base-text">По сравнению с вакуумными, электрические имеют более плавный ход и возможность установить
             не только распашные, но и автоматические двери, которые позволяют дополнительно экономить пространство.</p>
@@ -145,7 +145,7 @@
             <span class="button__description">в течении 10 минут</span>
           </button>
         </div>
-        <div class="model d-none" data-inner="current-collection">
+        <div class="model" data-inner="current-collection">
           <div class="model__title">Готовый модельный ряд</div>
           <p class="base-text">В нашей коллекции насчитывается более сотни лифтов. Каждый лифт прошел все необходимые
             тесты и опробован десятками заказчиков. В кратчайшие срок мы готовы собрать и установить вам любую из наших
@@ -155,7 +155,7 @@
             <span class="button__description">в течении 10 минут</span>
           </button>
         </div>
-        <div class="model d-none" data-inner="new-order">
+        <div class="model" data-inner="new-order">
           <div class="model__title">Под заказ</div>
           <p class="base-text">Хотите получить лифт в уникальном дизайне или не нашли подходящего варианта в нашем
             каталоге? Не проблема! Мы с радостью воплотим в жизнь любой дизайн и конструкцию. Наши специалисты обладают
@@ -165,7 +165,7 @@
             <span class="button__description">в течении 10 минут</span>
           </button>
         </div>
-        <div class="model d-none" data-inner="model-el-d1000">
+        <div class="model" data-inner="model-el-d1000">
           <div class="model__title">Модель EL-D1000</div>
           <p class="base-text"> - Самая ходовая модель с комфортом поднимает 2х пассажиров.</p>
           <p class="base-text"> - Широкий спектр отделочных материалов и дополнительных опция позволяет добиться
@@ -176,7 +176,7 @@
             <span class="button__description">в течении 10 минут</span>
           </button>
         </div>
-        <div class="model d-none" data-inner="model-d800">
+        <div class="model" data-inner="model-d800">
           <div class="model__title">Модель D800</div>
           <p class="base-text">Ключевые характеристики модели: </p>
           <p class="base-text"> - Установка без приямка </p>
@@ -188,7 +188,7 @@
             <span class="button__description">в течении 10 минут</span>
           </button>
         </div>
-        <div class="model d-none" data-inner="model-d1000">
+        <div class="model" data-inner="model-d1000">
           <div class="model__title">Модель D1000</div>
           <p class="base-text"> - Данная модель идеально подходит для перемещения 1-го человека.</p>
           <p class="base-text"> - Габариты позволяют вписать даже в небольшое отверстие в перекрытии.</p>
@@ -200,12 +200,16 @@
         </div>
       </div>
     </div>
+    <button data-modal="calculate" class="categories__calculate-btn button" type="button">
+      <span class="button__title">Рассчитать стоимость</span>
+      <span class="button__description">в течении 10 минут</span>
+    </button>
   </div>
 </section>
 <section class="slider">
   <div class="container">
-    <h2 class="slider__title base-title">Добавьте “wow” эффект своему&nbsp;интерьеру</h2>
-    <div class="slider__images owl-carousel owl-theme">
+    <h2 data-animate="animleft"  class="slider__title base-title no-animated">Добавьте “wow” эффект своему&nbsp;интерьеру</h2>
+    <div data-animate="animtop" class="slider__images owl-carousel owl-theme no-animated">
       <div><img alt="" src="./img/slider-img-1.jpg"></div>
       <div><img alt="" src="./img/slider-img-2.jpg"></div>
     </div>
@@ -216,9 +220,9 @@
     <div class="elevator-info__logo">
       <img src="./img/logo-grey.png" alt="Constanta" width="112" height="29">
     </div>
-    <h2 class="elevator-info__title">Легкий, компактный, без строительной бетонной шахты, машинного отделения и
+    <h2 data-animate="animtop" class="elevator-info__title no-animated">Легкий, компактный, без строительной бетонной шахты, машинного отделения и
       приямка</h2>
-    <div class="elevator-info__wrapper">
+    <div data-animate="animtop" class="elevator-info__wrapper no-animated">
       <div class="elevator-info__elevator-image">
         <img width="147" height="387" src="./img/elevator-medium.png" alt="Вакуумный лифт">
       </div>
@@ -271,9 +275,9 @@
 </section>
 <section class="panorama">
   <div class="container">
-    <h2 class="panorama__title base-title">Бескомпромиссная панорамность</h2>
-    <p class="panorama__subtitle">Мы побили все мировые рекорды по градусу обзора</p>
-    <div class="panorama__content">
+    <h2 data-animate="animleft" class="no-animated panorama__title base-title">Бескомпромиссная панорамность</h2>
+    <p data-animate="animleft" class="no-animated panorama__subtitle">Мы побили все мировые рекорды по градусу обзора</p>
+    <div data-animate="animtop" class=" no-animated panorama__content">
       <p class="panorama__column base-text">
         Полностью прозрачная шахта и кабина интерьерных круглых лифтов обеспечивают круговой панорамный вид. У
         прямоугольных электрических лифтов на одном этаже видны только 4 стойки и один пояс. Толщина стоек всего 9 см.
@@ -291,12 +295,12 @@
   <h2 class="visually-hidden">Безопасность лифтов</h2>
   <div class="container">
     <div class="features__wrapper">
-      <p class="features__title base-title">Безопасный и&nbsp;бесшумный</p>
-      <p class="features__text base-text">Вы никогда не застрянете в нашем лифте - <b>абсолютная безопасность!</b><br>
+      <p data-animate="animleft" class="no-animated features__title base-title">Безопасный и&nbsp;бесшумный</p>
+      <p data-animate="animright" class="no-animated features__text base-text">Вы никогда не застрянете в нашем лифте - <b>абсолютная безопасность!</b><br>
         Мы продумали конструкцию до мелочей. Механизм подвергался серьезным испытаниям на предприятии и только после
         окончательного этапа проверки на безопасность вакуумный лифт был представлен рынку.</p>
     </div>
-    <ul class="features__list">
+    <ul data-animate="animtop" class="no-animated features__list">
       <li class="features__item">
         <div class="features__img">
           <img width="190" height="190" src="./img/feature1.png" alt="">
@@ -354,13 +358,13 @@
 <section class="design">
   <div class="container">
     <div class="design__wrapper">
-      <h2 class="design__title base-title">Варианты отделки</h2>
-      <p class="design__text base-text">Дизайн и внешний вид коттеджных лифов «Constanta» прекрасно вписывается в любое
+      <h2 data-animate="animleft" class="no-animated design__title base-title">Варианты отделки</h2>
+      <p data-animate="animright" class="no-animated design__text base-text">Дизайн и внешний вид коттеджных лифов «Constanta» прекрасно вписывается в любое
         окружение, изящно подчеркивая его стильность и современность. Широкий выбор доступных вариантов отделки,
         цветовых решений и возможностей освещения кабины, удовлетворяет самым взыскательным требованиям и позволяет
         индивидуализировать домашний лифт по вашему вкусу</p>
     </div>
-    <ul class="design__sections">
+    <ul data-animate="animtop" class="no-animated design__sections">
       <li class="design__sections-item">
         <p class="design__section-title">Варианты оформления стенных панелей кабины лифта:</p>
         <ul class="design__items">
@@ -502,16 +506,16 @@
 <section class="advantages">
   <div class="container">
     <div class="advantages__wrapper">
-      <h2 class="advantages__title base-title">Как мы работаем</h2>
-      <p class="advantages__text base-text">Широкий выбор доступных вариантов отделки, цветовых решений и возможностей
+      <h2 data-animate="animleft" class="no-animated advantages__title base-title">Как мы работаем</h2>
+      <p data-animate="animright" class="no-animated advantages__text base-text">Широкий выбор доступных вариантов отделки, цветовых решений и возможностей
         освещения кабины, удовлетворяет самым взыскательным требованиям и позволяет индивидуализировать домашний лифт по
         вашему вкусу</p>
-      <button data-modal="calculate" type="button" class="advantages__button button button--man-img">
+      <button data-animate="animright" data-modal="calculate" type="button" class="no-animated advantages__button button button--man-img">
         <span class="button__title">Рассчитать стоимость</span>
         <span class="button__description">в течении 10 минут</span>
       </button>
     </div>
-    <ol class="advantages__list">
+    <ol data-animate="animtop" class="no-animated advantages__list">
       <li class="advantages__item">
         <div class="advantages__img">
           <span class="advantages__number">01</span>
@@ -552,8 +556,8 @@
 </section>
 <section class="offer">
   <div class="container">
-    <h2 class="offer__title base-title">Гарантируем лучшую цену панорамных лифтов на рынке</h2>
-    <p class="offer__text base-text">Мы настолько уверенны в том, что наш модельный ряд и ценовая политика удовлетворит
+    <h2 data-animate="animtop" class="no-animated offer__title base-title">Гарантируем лучшую цену панорамных лифтов на рынке</h2>
+    <p data-animate="animtop"  class="no-animated offer__text base-text">Мы настолько уверенны в том, что наш модельный ряд и ценовая политика удовлетворит
       ваш запрос, что даем гарантию: мы покроем часть ваших расходов на покупку лифта любого другого производителя, если
       после встречи в нашем шоу-руме, вы не примите рещения о покупке лифта “CONTANTA”</p>
     <footer class="offer__footer footer">
@@ -606,13 +610,14 @@
 </div>
 <div data-modal-item="calculate" class="modal modal--calc-bg hidden">
   <p class="modal__title">Рассчитать стоимость</p>
-  <p class="modal__text base-text">Закажите обратный звонок и мы ответим на ваши вопросы</p>
+  <p class="modal__text base-text">Оставьте заявку на просчёт стоимости. Наш менеджер свяжется с вами, чтобы уточнить детали влияющие на стоимость лифта</p>
   <form action="#" method="post" class="modal__form">
     <input class="modal__input" type="text" name="name" placeholder="Введите ваше имя">
     <input class="modal__input" type="text" name="tel" placeholder="+7(999)999-99-99">
+    <input class="modal__input" type="email" name="tel" placeholder="email@example.com">
     <button type="submit" class="modal__button button button--man-img">
-      <span class="button__title">Отправить заявку на звонок</span>
-      <span class="button__description">в течении 10 минут</span>
+      <span class="button__title">Отправить заявку</span>
+      <span class="button__description">на расчет стоимости</span>
     </button>
   </form>
   <button type="button" class="modal__close" aria-label="Закрыть модальное окно"></button>

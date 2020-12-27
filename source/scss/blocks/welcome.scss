@@ -91,19 +91,25 @@
   }
 
   .welcome__elevator {
-    display: none;
+    top: 80px;
+    z-index: 0;
+    right: 0;
+    width: 120px;
   }
 
   .welcome__promo {
     @include center;
-    width: 95%;
+    width: 85%;
+    max-width: 300px;
     margin-top: 50px;
     position: static;
+    margin-left: 0;
   }
 
   .welcome__quote {
     position: static;
-    width: 100%;
+    width: 85%;
+    max-width: 300px;
     margin-top: 25px;
   }
 

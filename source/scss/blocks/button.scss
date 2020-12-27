@@ -73,7 +73,7 @@
 
 @media only screen and (max-width: $tablet-width) {
   .button {
-    padding: 10px 40px;
+    padding: 8px 40px;
   }
 
   .button--elevator-img {
@@ -84,6 +84,21 @@
   .button--man-img {
     padding-left: 45px;
     padding-right: 35px;
+
+    &::before {
+      width: 45px;
+      height: 60px;
+      background-size: 45px auto;
+      top: -15px;
+    }
+  }
+
+  .button__title {
+    @include set-font(14px, 16px, 500);
+  }
+
+  .button__description {
+    @include set-font(12px, 14px, 400);
   }
 }
 
@@ -91,6 +106,6 @@
   .button {
     width: 100%;
     align-items: center;
-    padding: 8px 35px;
+    padding: 7px 33px;
   }
 }

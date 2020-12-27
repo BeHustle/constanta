@@ -1,5 +1,20 @@
 .model {
-  @include set-transition(opacity);
+  transition-property: height, visibility, opacity;
+  transition-duration: 0s, 0.05s, 0.2s;
+  transition-timing-function: ease-in, ease-in, ease-in;
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+
+  &--visible {
+    transition-delay: 0s, 0.0025s, 0.1s;
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 35px;
+  }
 }
 
 .model__title {
@@ -22,6 +37,7 @@
   }
 
   .model__button {
+    display: none;
     margin-top: 20px;
   }
 }

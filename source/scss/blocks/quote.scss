@@ -32,6 +32,12 @@
 
 @media only screen and (max-width: $mobile-width) {
   .quote__author-block {
+    display: none;
     justify-content: flex-start;
+  }
+
+  .quote__text {
+    position: relative;
+    z-index: 1;
   }
 }
