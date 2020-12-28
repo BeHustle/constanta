@@ -78,12 +78,12 @@
 
 @media only screen and (max-width: $mobile-width) {
   .welcome {
-    padding-bottom: 50px;
+    padding-bottom: 70px;
   }
 
   .welcome__container {
     position: relative;
-    padding-bottom: 90px;
+    padding-bottom: 110px;
   }
 
   .welcome__header {
@@ -91,7 +91,7 @@
   }
 
   .welcome__elevator {
-    top: 80px;
+    top: 110px;
     z-index: 0;
     right: 0;
     width: 120px;
@@ -101,7 +101,7 @@
     @include center;
     width: 85%;
     max-width: 300px;
-    margin-top: 50px;
+    margin-top: 80px;
     position: static;
     margin-left: 0;
   }
@@ -110,7 +110,7 @@
     position: static;
     width: 85%;
     max-width: 300px;
-    margin-top: 25px;
+    margin-top: 60px;
   }
 
   .welcome__cta-btn {
