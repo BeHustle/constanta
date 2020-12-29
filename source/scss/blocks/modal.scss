@@ -30,6 +30,35 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
+
+  &--elevator {
+    padding: 0;
+    background-color: #FBFEFF;
+    background-image: none;
+  }
+}
+
+.modal__wrapper {
+  display: flex;
+}
+
+.modal__image {
+  flex-shrink: 0;
+  border-radius: 20px;
+
+  & img {
+    display: block;
+  }
+}
+
+.modal__content {
+  padding: 35px 70px 35px 30px;
+}
+
+.modal__white-text {
+  @include vertical-margin-clear;
+  @include set-font(16px, 24px, 500);
+  color: $c-light-grey;
 }
 
 .modal__title {
@@ -37,12 +66,27 @@
   @include set-font(30px, 40px, 500);
   @include set-font-family('Goudy Trajan');
   color: $c-dark-blue;
+
+  &--black {
+    color: $c-black;
+  }
+}
+
+.modal__subtitle {
+  @include vertical-margin-clear;
+  @include set-font(16px, 24px, 500);
+  margin-top: 25px;
 }
 
 .modal__text {
   @include vertical-margin-clear;
   margin-top: 13px;
   width: 320px;
+}
+
+.modal--elevator .modal__text {
+  width: auto;
+  margin-top: 10px;
 }
 
 .modal__form {
@@ -116,6 +160,27 @@
     &--calc-bg {
       background: #F7F6F0;
     }
+
+    &--elevator {
+      padding: 0;
+      width: 95vw;
+    }
+  }
+
+  .modal__image {
+    flex-shrink: 0;
+    border-radius: 10px;
+
+    & img {
+      width: 250px;
+      height: auto;
+      display: block;
+    }
+  }
+
+  .modal__content {
+    padding: 20px;
+    padding-left: 10px;
   }
 
   .modal__title {
@@ -154,6 +219,10 @@
     width: 90vw;
     padding: 15px;
     border-radius: 10px;
+
+    &--elevator {
+      padding: 0;
+    }
   }
 
   .modal__title {
@@ -181,6 +250,13 @@
     }
   }
 
+  .modal__image {
+    display: none;
+  }
+
+  .modal__content {
+    padding: 15px;
+  }
 
   .modal__close {
     top: 15px;

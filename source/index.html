@@ -26,7 +26,8 @@
     </header>
     <div class="welcome__elevator elevator">
       <div class="welcome__elevator-container elevator__container">
-        <img width="322" height="900" src="./img/elevator-big.png" alt="Вакуумный лифт"></div>
+        <img width="322" height="900" src="./img/elevator-big.png" alt="Вакуумный лифт">
+      </div>
       <button style="display: none" type="button" data-info="1" class="welcome__elevator-btn elevator__plus-btn">
         <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 6.48H4.32V10.8H6.36V6.48H10.68V4.32H6.36V0H4.32V4.32H0V6.48Z" fill="white"/>
@@ -92,14 +93,14 @@
           </button>
           <ul class="category__inner-list">
             <li class="category__product">
-              <button type="button" data-category="model-d800" class="category__product-btn">Модель D800</button>
+              <button type="button" data-modal="el1000" class="category__product-btn">Модель D800</button>
             </li>
             <li class="category__product">
-              <button type="button" data-category="model-el-d1000" class="category__product-btn">Модель EL D1000
+              <button type="button" data-modal="el1000" class="category__product-btn">Модель EL D1000
               </button>
             </li>
             <li class="category__product">
-              <button type="button" data-category="model-d1000" class="category__product-btn">Модель D1000</button>
+              <button type="button" data-modal="el1000" class="category__product-btn">Модель D1000</button>
             </li>
           </ul>
         </li>
@@ -110,13 +111,13 @@
           </button>
           <ul class="category__inner-list">
             <li class="category__product">
-              <button type="button" data-category="model-d1000" class="category__product-btn">Модель D1000</button>
+              <button type="button" data-modal="el1000" class="category__product-btn">Модель D1000</button>
             </li>
             <li class="category__product">
-              <button type="button" data-category="model-d800" class="category__product-btn">Модель D800</button>
+              <button type="button" data-modal="el1000" class="category__product-btn">Модель D800</button>
             </li>
             <li class="category__product">
-              <button type="button" data-category="model-el-d1000" class="category__product-btn">Модель EL D1000
+              <button type="button" data-modal="el1000" class="category__product-btn">Модель EL D1000
               </button>
             </li>
           </ul>
@@ -160,39 +161,6 @@
           <p class="base-text">Хотите получить лифт в уникальном дизайне или не нашли подходящего варианта в нашем
             каталоге? Не проблема! Мы с радостью воплотим в жизнь любой дизайн и конструкцию. Наши специалисты обладают
             огромным опытом и выполнят любой проект максимально быстро и качественно, вне зависимости от сложности</p>
-          <button data-modal="calculate" class="model__button button" type="button">
-            <span class="button__title">Рассчитать стоимость</span>
-            <span class="button__description">в течении 10 минут</span>
-          </button>
-        </div>
-        <div class="model" data-inner="model-el-d1000">
-          <div class="model__title">Модель EL-D1000</div>
-          <p class="base-text"> - Самая ходовая модель с комфортом поднимает 2х пассажиров.</p>
-          <p class="base-text"> - Широкий спектр отделочных материалов и дополнительных опция позволяет добиться
-            неповторимого дизайна</p>
-          <p class="base-text"> - В базовом оснащении модель достигает скорости 0,5 метров в секунду</p>
-          <button data-modal="calculate" class="model__button button" type="button">
-            <span class="button__title">Рассчитать стоимость</span>
-            <span class="button__description">в течении 10 минут</span>
-          </button>
-        </div>
-        <div class="model" data-inner="model-d800">
-          <div class="model__title">Модель D800</div>
-          <p class="base-text">Ключевые характеристики модели: </p>
-          <p class="base-text"> - Установка без приямка </p>
-          <p class="base-text"> - 460 вариантов отделки </p>
-          <p class="base-text"> - Тихая работа </p>
-          <p class="base-text"> - Круговой обзор 360</p>
-          <button data-modal="calculate" class="model__button button" type="button">
-            <span class="button__title">Рассчитать стоимость</span>
-            <span class="button__description">в течении 10 минут</span>
-          </button>
-        </div>
-        <div class="model" data-inner="model-d1000">
-          <div class="model__title">Модель D1000</div>
-          <p class="base-text"> - Данная модель идеально подходит для перемещения 1-го человека.</p>
-          <p class="base-text"> - Габариты позволяют вписать даже в небольшое отверстие в перекрытии.</p>
-          <p class="base-text"> - Малый вес лифта выдержит даже не усиленное деревянное перекрытие</p>
           <button data-modal="calculate" class="model__button button" type="button">
             <span class="button__title">Рассчитать стоимость</span>
             <span class="button__description">в течении 10 минут</span>
@@ -623,6 +591,26 @@
   <button type="button" class="modal__close" aria-label="Закрыть модальное окно"></button>
 </div>
 <div class="modal modal--img hidden">
+  <button type="button" class="modal__close" aria-label="Закрыть модальное окно"></button>
+</div>
+<div data-modal-item="el1000" class="modal hidden modal--elevator">
+  <div class="modal__wrapper">
+    <div class="modal__image">
+      <img width="320" height="584" src="./img/elevator_modal.png" alt="Модель EL1000">
+    </div>
+    <div class="modal__content">
+      <p class="modal__white-text">Модель</p>
+      <p class="modal__title modal__title--black base-title">EL1000</p>
+      <p class="modal__subtitle">Ключевые характеристики</p>
+      <p class="modal__text base-text">По сравнению с вакуумными, электрические имеют более плавный ход и возможность установить не только распашные, но и автоматические двери, которые позволяют дополнительно экономить </p>
+      <p class="modal__subtitle">Ключевые характеристики</p>
+      <p class="modal__text base-text">По сравнению с вакуумными, электрические имеют более плавный ход и возможность установить не только распашные, но и автоматические двери, которые позволяют дополнительно экономить </p>
+      <a href="http://www.africau.edu/images/default/sample.pdf" target="_blank" download class="modal__button button button--man-img">
+        <span class="button__title">Скачать презентацию</span>
+        <span class="button__description">Подробнее про каждую модель</span>
+      </a>
+    </div>
+  </div>
   <button type="button" class="modal__close" aria-label="Закрыть модальное окно"></button>
 </div>
 <script src="./js/main-min.js"></script>
